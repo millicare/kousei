@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<title>晃成製作所有限会社 | 通信販売</title>
+		<meta name="author" content="晃成製作所有限会社,KOUSEI INC.," />
+		<meta name="description" content="晃成製作所有限会社は高性能NC工作機器を完備した自社工房において腕時計の企画、製造からメンテナンスまでを一貫して行う国内唯一のウォッチメ－カ－です。お客さまのニーズに合わせ小ロットにての時計製造を請け負います。" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" media="all" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="../css/basic.css" />
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+		<![endif]-->
+		<meta name="keywords" content="腕時計,時計,国産時計,小ロット,OEM,高性能NC工作機器,自社工房" />
+		<script type="text/javascript" src="../js/jquery-3.2.0.min.js"></script>
+		<script src="../js/jquery.jtruncsubstr.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(function() {
+				var language
+				function setLanguage (lang) {
+					localStorage.setItem('language', lang)
+				}
+				function getLanguage () {
+					(localStorage.getItem('language') == null) ? setLanguage('jp') : false
+					var dfr = $.Deferred()
+					$.ajax({
+						url:  '../lang/' +  localStorage.getItem('language') + '.json',
+						dataType: 'json',
+						type: 'GET',
+						success: function (lang) {
+							dfr.resolve(lang)
+						}
+					});
+					return dfr.promise()
+				}
+				function refreshPage () {
+					for (var hId in language.layout.header) {
+						$('#gheader-in #gnav li#' + hId + ' a img').attr('src', '../img/navi/' + language.layout.header[hId].normalImg)
+						$('#gheader-in #gnav li#' + hId + ' a').css('background', 'url(../img/navi/' + language.layout.header[hId].hoverImg + ') 0 0 no-repeat')
+						$('#gheader-in #gnav li#' + hId + ' a').hover(function () {
+							$(this).css('background-color', '#000')
+						}, function () {
+							$(this).css('background-color', '#fff')
+						})
+					}
+
+					if (language.pages.shopping.message) {
+						$('.contents').hide()
+						$('.message').show()
+						$('.message').html(language.pages.shopping.message)
+					} else {
+						$('.contents').show()
+						$('.message').hide()
+					}
+					$('#stit img').attr('src', '../img/shopping/' + language.pages.shopping.titleImg)
+					$('.breadcrumb .breadcrumb-in').html('<a href="../index.html">' + language.pages.shopping.breadcrumb.split('>')[0] + '</a>>' + language.pages.shopping.breadcrumb.split('>')[1])
+					for (var fId in language.layout.footer) {
+						$('#gfooter #navi-ft li#' + fId + ' a').html(language.layout.footer[fId])
+					}
+				}
+				$('#lang-sel select').change(function () {
+					setLanguage($(this).val())
+					$.when(getLanguage()).then(function (lang) {
+						language = lang
+						refreshPage()
+					})
+				})
+				var lang = localStorage.getItem('language')
+				$('#lang-sel select').val((lang ? lang : 'jp')).trigger('change')
+			});
+		</script>
+		<script type="text/javascript">
+		$(function(){
+		$("#toggle").click(function(){
+			$("#gnav").slideToggle();
+			return false;
+		  });
+		$(window).resize(function(){
+			var win = $(window).width();
+			var p = 959;
+			if(win > p){
+			$("#gnav").show();
+		 } else {
+			$("#gnav").hide();
+		 }
+		 });
+		});
+		$(function() {
+			var win = $(window).width();
+			var p = 959;
+			if(win < p)$(function(){
+				$("#gnav li a").click(function(){
+					$("#gnav").hide();
+				});
+			});
+		});
+		</script>
+	</head>
+	<body>
+		<header id="gheader00">
+			<div id="sub-logo">
+				<img src="../img/navi/sub-logo.png" alt="晃成製作所有限会社 KOUSEI INC., The independent watch maker.">
+			</div>
+		</header>
+		<header id="gheader02">
+			<nav id="gheader-in">
+				<div id="toggle"><a href="#"></a></div>
+				<ul id="gnav">
+					<li id="home">
+						<a id="navi-01" href="../index.html">
+							<img src="../img/navi/nav-bt-top01.png" alt="トップページ | TO TOP">
+						</a>
+					</li>
+					<li id="aboutUs">
+						<a id="navi-02" href="../aboutus/index.html">
+							<img src="../img/navi/nav-bt-about01.png" alt="会社案内 | ABOUT US">
+						</a>
+					</li>
+					<li id="oem">
+						<a id="navi-03" href="../oem/index.html">
+							<img src="../img/navi/nav-bt-oem01.png" alt="受託製造 | OEM">
+						</a>
+					</li>
+					<li id="productList">
+						<a id="navi-04" href="../monoceros/index.html">
+							<img src="../img/navi/nav-bt-mono01.png" alt="monoceros | ORIGINAL PRODUCT">
+						</a>
+					</li>
+					<li id="shopping">
+						<a id="navi-05" href="../shopping/index.html">
+							<img src="../img/navi/nav-bt-shop01.png" alt="通信販売 | ONLINE SHOPPING">
+						</a>
+					</li>
+					<li id="contactUs">
+						<a id="navi-06" href="../contactus/index.html">
+							<img src="../img/navi/nav-bt-mail01.png" alt="お問い合わせ | OCONTACT US">
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div id="lang-sel">
+				<select>
+					<option value="jp">日本語</option>
+					<option value="en">English</option>
+					<option value="ch">中文</option>
+				</select>
+			</div>
+		</header>
+		<div class="breadcrumb">
+			<div class="breadcrumb-in">
+				<a href="../index.html">トップ</a> > 通信販売
+			</div>
+		</div>
+		<div id="wrapper">
+			<div id="stit">
+				<img src="../img/shopping/stit-shopping.png" alt="通信販売">
+			</div>
+			<div class="contents">
+				<div class="delivery">
+					<ul>
+						<li>
+							下記のオーダーシートにご記入ください。
+						</li>
+						<li>
+							弊社でご注文のメールを拝見次第、発送日、金額のおしらせメ－ルを当方から送信します。
+						</li>
+						<li>
+							メ－ル以外でも電話、FAXにてもお受けいたします。（TEL　042-575-2732　FAX　042-577-0652）
+						</li>
+						<li>
+							商品はヤマト運輸の配達時代金引換にて発送します。お代金は配達時にお支払いください。
+						</li>
+						<li>
+							商品代金以外に送料を別途たまわります。送料は<a href="http://www.kuronekoyamato.co.jp/ytc/search/estimate/kanto.html" target="_blank">ヤマト運輸ホームページ</a>をご覧ください。
+						</li>
+					</ul>
+					<p class="padb12em">
+						■配達日の指定について<br>
+						①&nbsp;配達日の指定をしていただかない場合<br>
+						出荷準備が整い次第最短で出荷します。<br>
+						②&nbsp;配達日の指定をして頂く場合<br>
+						配達日の指定は注文メールを送られる日より土日、祭日を除き４日後より承ります。これより早い配達日をご指定頂いた場合は最短日時の出荷となりますのであらかじめご了承下さい。<br>
+						■配達時間の指定について<br>
+						<a href="http://www.kuronekoyamato.co.jp/ytc/customer/send/services/takkyubin/" target="_blank">ヤマト運輸ホームページ</a>でご確認ください。
+					</p>
+				</div>
+				<div class="table-contact">
+					<form action="mail.php" method="post" autocomplete="on">
+						<table>
+							<tr>
+								<th>
+									商品 <span class="red">※必須</span>
+								</th>
+								<td>
+									<input name="商品[]" type="checkbox" value="MA060103">CHRONOGRAPH MA060103　¥250,000 + TAX <span class="red">限定50個</span><br>
+									<input name="商品[]" type="checkbox" value="MA060102">POWERRESERVE MA060102　¥200,000 + TAX<br>
+									<input name="商品[]" type="checkbox" value="MA060104">POINTER DATE MA060104　¥250 ,000 + TAX <span class="red">限定25個生産</span><br>
+									<input name="商品[]" type="checkbox" value="MA060105">MEN’S MA060105S　¥95,000 + TAX<br>
+									<input name="商品[]" type="checkbox" value="MA060106">LADY’S MA060106S　¥95,000 + TAX<br>
+									<input name="商品[]" type="checkbox" value="MA060105BU">MEN’S MA060105BU　¥95,000 + TAX<br>
+									<input name="商品[]" type="checkbox" value="MA060106BU">LADY’S MA060106BU　¥95,000 + TAX
+								</td>
+							</tr>
+							<tr>
+								<th>
+									オンネーム（対象商品のみ）
+								</th>
+								<td>
+									希望書体 <input type="text" name="オンネーム希望書体" placeholder="例）山田太郎"><br><br>
+									名入れ文字 <input type="text" name="オンネーム名入れ文字" placeholder="例）山田太郎">
+								</td>
+							</tr>
+							<tr>
+								<th>
+									配達希望日
+								</th>
+								<td>
+									<select name="配達希望月">
+										<option value="" selected>選択してください</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+									</select> 月　
+									<select name="配達希望日">
+										<option value="" selected>選択してください</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+										<option value="13">13</option>
+										<option value="14">14</option>
+										<option value="15">15</option>
+										<option value="16">16</option>
+										<option value="17">17</option>
+										<option value="18">18</option>
+										<option value="19">19</option>
+										<option value="20">20</option>
+										<option value="21">21</option>
+										<option value="22">22</option>
+										<option value="23">23</option>
+										<option value="24">24</option>
+										<option value="25">25</option>
+										<option value="26">26</option>
+										<option value="27">27</option>
+										<option value="28">28</option>
+										<option value="29">29</option>
+										<option value="30">30</option>
+										<option value="31">31</option>
+									</select> 日
+								</td>
+							</tr>
+							<tr>
+								<th>
+									配達希望時間帯
+								</th>
+								<td>
+									<select name="配達希望時間帯">
+										<option value="" selected>選択してください</option>
+										<option value="午前中">午前中</option>
+										<option value="14時-16時">14時-16時</option>
+										<option value="16時-18時">16時-18時</option>
+										<option value="18時-20時">18時-20時</option>
+										<option value="19時-21時">19時-21時</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<th>
+									お名前（漢字）<span class="red">※必須</span>
+								</th>
+								<td>
+									<input type="text" name="お名前" placeholder="例）山田太郎">
+								</td>
+							</tr>
+							<tr>
+								<th>
+									フリガナ（カタカナ）<span class="red">※必須</span>
+								</th>
+								<td>
+									<input type="text" name="フリガナ" placeholder="例）ヤマダタロウ">
+								</td>
+							</tr>
+							<tr>
+								<th>
+									メールアドレス <span class="red">※必須</span>
+								</th>
+								<td>
+									<input type="text" name="Email" placeholder="例）abc@kousei-watch.co.jp">
+								</td>
+							</tr>
+							<tr>
+								<th>
+									お電話番号 <span class="red">※必須</span>
+								</th>
+								<td>
+									<input type="text" name="お電話番号" placeholder="半角英数（例）0286122171">
+								</td>
+							</tr>
+							<tr>
+								<th>
+									都道府県 <span class="red">※必須</span>
+								</th>
+								<td>
+									<select name="都道府県">
+										<option value="" selected>選択してください</option>
+										<option value="北海道">北海道</option>
+										<option value="青森県">青森県</option>
+										<option value="岩手県">岩手県</option>
+										<option value="宮城県">宮城県</option>
+										<option value="秋田県">秋田県</option>
+										<option value="山形県">山形県</option>
+										<option value="福島県">福島県</option>
+										<option value="茨城県">茨城県</option>
+										<option value="栃木県">栃木県</option>
+										<option value="群馬県">群馬県</option>
+										<option value="埼玉県">埼玉県</option>
+										<option value="千葉県">千葉県</option>
+										<option value="東京都">東京都</option>
+										<option value="神奈川県">神奈川県</option>
+										<option value="新潟県">新潟県</option>
+										<option value="富山県">富山県</option>
+										<option value="石川県">石川県</option>
+										<option value="福井県">福井県</option>
+										<option value="山梨県">山梨県</option>
+										<option value="長野県">長野県</option>
+										<option value="岐阜県">岐阜県</option>
+										<option value="静岡県">静岡県</option>
+										<option value="愛知県">愛知県</option>
+										<option value="三重県">三重県</option>
+										<option value="滋賀県">滋賀県</option>
+										<option value="京都府">京都府</option>
+										<option value="大阪府">大阪府</option>
+										<option value="兵庫県">兵庫県</option>
+										<option value="奈良県">奈良県</option>
+										<option value="和歌山県">和歌山県</option>
+										<option value="鳥取県">鳥取県</option>
+										<option value="島根県">島根県</option>
+										<option value="岡山県">岡山県</option>
+										<option value="広島県">広島県</option>
+										<option value="山口県">山口県</option>
+										<option value="徳島県">徳島県</option>
+										<option value="香川県">香川県</option>
+										<option value="愛媛県">愛媛県</option>
+										<option value="高知県">高知県</option>
+										<option value="福岡県">福岡県</option>
+										<option value="佐賀県">佐賀県</option>
+										<option value="長崎県">長崎県</option>
+										<option value="熊本県">熊本県</option>
+										<option value="大分県">大分県</option>
+										<option value="宮崎県">宮崎県</option>
+										<option value="鹿児島県">鹿児島県</option>
+										<option value="沖縄県">沖縄県</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<th>
+									郵便番号 <span class="red">※必須</span>
+								</th>
+								<td>
+									<input type="text" name="郵便番号" placeholder="例）3210968">　
+								</td>
+							</tr>
+							<tr>
+								<th>
+									ご住所 <span class="red">※必須</span>
+								</th>
+								<td>
+									<input type="text" name="ご住所">
+								</td>
+							</tr>
+							<tr>
+								<th>
+									備考
+								</th>
+								<td>
+									<textarea name="備考" placeholder="お問い合わせがある場合ご記入ください"></textarea>
+								</td>
+							</tr>
+						</table>
+						<div class="btn-out">
+							<button type="submit" class="btn">送　信</button> <input type="reset" value="リセット"  class="btn">
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="message">
+			</div>
+		</div><!--wrapper完了-->
+		<footer id="gfooter">
+			<div id="gfooter-in">
+				<div id="ft-logo">
+					<div>
+						<img src="../img/common/ft-logo.png" alt="晃成製作所有限会社 KOUSEI INC., The independent watch maker.">
+					</div>
+					<div class="sns-icons">
+						<a href="https://www.facebook.com/%E6%99%83%E6%88%90%E8%A3%BD%E4%BD%9C%E6%89%80%E6%9C%89%E9%99%90%E4%BC%9A%E7%A4%BE-110668920598755/" target="_blank"><img src="../img/common/icon_fb.png" alt="facebook"></a>
+						<a href="https://www.instagram.com/kousei_watch_monoceros/" target="_blank"><img src="../img/common/icon_insta.png" alt="insta"></a>
+						<a href=""><img src="../img/common/icon_twitter.png" alt="twitter"></a>
+					</div>
+				</div>
+				<div id="navi-ft">
+					<div class="table-el">
+						<ul>
+							<li id="home">
+								<a href="../index.html">トップページ</a>
+							</li>
+							<li id="aboutUs">
+								<a href="../aboutus/index.html">会社案内</a>
+							</li>
+							<li id="oem">
+								<a href="../oem/index.html">受託製造（OEM）</a>
+							</li>
+						</ul>
+					</div>
+					<div class="table-el">
+						<ul>
+							<li>
+								monoceros
+							</li>
+							<li id="productList">
+								<a href="../monoceros/index.html">&gt;商品リスト</a>
+							</li>
+							<li id="feature">
+								<a href="../monoceros/feature.html">&gt;特徴</a>
+							</li>
+							<li id="design">
+								<a href="../monoceros/design.html">&gt;デザイン</a>
+							</li>
+						</ul>
+					</div>
+					<div class="table-el">
+						<ul>
+							<li id="shopping">
+								<a href="../shopping/index.html">通信販売</a>
+							</li>
+							<li id="contactUs">
+								<a href="../contactus/index.html">お問い合わせ</a>
+							</li>
+							<li id="law">
+								<a href="../shopping/law.html">特定商取引法に基づく表示</a>
+							</li>
+							<li id="privacy">
+								<a href="../privacy.html">プライバシーポリシー</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="cp-ft">
+				© 2019 KOUSEI INC.,
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,1457 @@
+{
+	"layout": {
+		"header": {
+			"home": {
+				"normalImg": "nav-bt-top01_en.png",
+				"hoverImg": "nav-bt-top02_en.png"
+			},
+			"aboutUs": {
+				"normalImg": "nav-bt-about01_en.png",
+				"hoverImg": "nav-bt-about02_en.png"
+			},
+			"oem": {
+				"normalImg": "nav-bt-oem01_en.png",
+				"hoverImg": "nav-bt-oem02_en.png"
+			},
+			"productList": {
+				"normalImg": "nav-bt-mono01.png",
+				"hoverImg": "nav-bt-mono02.png"
+			},
+			"shopping": {
+				"normalImg": "nav-bt-shop01_en.png",
+				"hoverImg": "nav-bt-shop02_en.png"
+			},
+			"contactUs": {
+				"normalImg": "nav-bt-mail01_en.png",
+				"hoverImg": "nav-bt-mail02_en.png"
+			}
+		},
+		"footer": {
+			"home": "To Top",
+			"aboutUs": "About Us",
+			"oem": "OEM",
+			"productList": ">Product List",
+			"feature": ">Feature",
+			"design": ">Design",
+			"shopping": "Online Shopping",
+			"contactUs": "Contact Us",
+			"law": "Specific Commercial Law Representative",
+			"privacy": "Privacy Policy"
+		}
+	},
+	"plugin": {
+		"jTruncSubStr": {
+			"readMore": "＞Read More",
+			"close": "＞Close"
+		}
+	},
+	"pages": {
+		"home": {
+			"topImgRight": "Based on pioneering technology and exquisite craftsmanship, our company creates excellent watches. We constantly keep a step further ahead of other watch manufacturers."
+		},
+		"aboutUs": {
+			"breadcrumb": {
+				"philosophy": "Top > Company Profile (Philosophy)",
+				"introduce": "Top > Company Profile (Company Profile)"
+			},
+			"philosophy": [
+				{
+					"title": "Management Philosophy",
+					"body": "KOUSEI INC. takes being an orthodox watch manufacturer as the goal and abides by orthodoxies to make watches. Orthodoxies, as is called, is to inherit the advantages of tradition, to make bold attempts and to devote all the craftsmanship and cost to the making of excellent watches. What distinguished us from other watch manufacturers is that we show originalities in products and have stable manufacturing system which has mobility. Besides, we constantly provide the customers with suitable products and good services"
+				},
+				{
+					"title": "Production System",
+					"body": "We offer our customers one-stop services which include the design, the manufacturing and the after-sales services. With established techniques and system mobility, we surpass the common knowledge of watch manufacturing, turning the impossible into something possible. We adopt no mold processing and obtain the best parts from domestic dealers and international dealers to manufacture unique products at small amounts. The final assembly and after-sales services will be offered by the hard-working and responsible employees in our company."
+				},
+				{
+					"title": "Commodity Planning Strategy",
+					"body": "We are not only good at manufacturing but also rich in originality, always focusing on the improvement of manufacture techniques and equipments. Besides, we also pay attention to the design, the plan, the development of the software and enrichment of ourselves. We have our own brand products and offer comprehensive services. We dedicate what we have to the services for our honorable customers."
+				}
+			],
+			"introduce": {
+				"name": {
+					"header": "Company name",
+					"body": "KOUSEI INC."
+				},
+				"address": {
+					"header": "Address",
+					"body": "4077-3, YAHO, KUNITACHI-SHI, TOKYO, JAPAN 186-0011"
+				},
+				"phoneNum": {
+					"header": "Phone number",
+					"body": "042-575-2732"
+				},
+				"faxNum": {
+					"header": "FAX number",
+					"body": "042-577-0652"
+				},
+				"ceo": {
+					"header": "CEO",
+					"body": "YOSHIO ISHIKAWA"
+				},
+				"foundAt": {
+					"header": "Founding date",
+					"body": "June,1978"
+				},
+				"capital": {
+					"header": "Capital",
+					"body": "3,000 thousand yen"
+				},
+				"numOfEmp": {
+					"header": "Numbers of employee",
+					"body": "10 persons"
+				},
+				"content": {
+					"header": "Business content",
+					"body": "In-house original watch manufacturing and sales. OEM orders for watches, manufacturing<br>【Own brand】MONOCEROS、KOUSEI, CREMATIS、CLORIS"
+				},
+				"char": {
+					"header": "Company characteristics",
+					"body": "We are a watch maker who uses high-performance NC machine tools at our own factory to consistently plan, manufacture, and maintain watches.<br>We undertake clock production in small lots according to customer needs."
+				}
+			},
+			"tabs": [
+				{"text": "Philosophy", "img": "stit-rinen_en.png"},
+				{"text": "Profile", "img": "stit-gaiyo_en.png"}
+			],
+			"imgs": {
+				"fig": "fig-rinen_en.png"
+			}
+		},
+		"oem": {
+			"breadcrumb": "Top > OEM",
+			"titleImg": "stit-oem_en.png",
+			"introTxt": "We offer comprehensive services for our company’s own brand products and OEM products. With established techniques and system mobility,　we are able to manufacture products at small amounts without molds. Besides the various and colorful movements enable the possibility of product diversity.<br>※ OEM business is only for companies and the payment should not be made by credit card.",
+			"p12rem": "※We offer after-sales services.",
+			"contentImgL": "fig-oem01_en.png",
+			"contentImgR": "fig-oem02_en.png"
+		},
+		"monoceros": {
+			"breadcrumb": {
+				"productList": "Top > monoceros",
+				"feature": "Top > monoceros > feature",
+				"design": "Top > monoceros > design"
+			},
+			"productList": {
+				"tabName": "Product List",
+				"detailTxt": "To product details",
+				"orderTxt": "To order products",
+				"data": [
+					{
+						"order": true,
+						"index": "ma060105gr",
+						"model": "MA060105GR",
+						"type": "Man’s",
+						"name": "Monoceros Man’s",
+						"price": "95,000",
+						"ml": "",
+						"comment": {
+							"header": [
+								"Mechanical watches wind automatically when the natural motion of the wearer occurs.<br>All the parts are carefully combined to pursue perfection.　"
+							],
+							"body": [
+								"Couple watches",
+								"Stainless steel straps with good texture and appropriate weight."
+							],
+							"footer": [
+								"Features of the cases: Inspired by traditional Japanese architecture, we pay attention to every detail.<br>Dial: The ring pattern on the dial highlights the beauty of ceramics.<br>Watch hands: Silver color hands which are bright and simple-style.<br>Back Case: Transparent hollow design enables you to admire the motion of the movement and the exquisite carving."
+							]
+						},
+						"property": {
+							"movement": {
+								"title": "Movement",
+								"content": "ETA2824-2 Made in Swiss,25 stones, automatic winding (with hand-winding function) movement"
+							},
+							"function": {
+								"title": "Function",
+								"content": "Hour, Minute, Second and Calendar hands"
+							},
+							"material": {
+								"title": "Material",
+								"content": "Case: Stainless steel   Upper & Back glass: Sapphire"
+							},
+							"band": {
+								"title": "Band",
+								"content": "*Band body: Stainless steel *Buckle: one push with 3 holding type): Stainless steel"
+							},
+							"size": {
+								"title": "Size",
+								"content": "Diameter: About 37.8mm   Thickness:10.5mm"
+							},
+							"dialColor": {
+								"title": "Dial Color",
+								"content": "Silver color"
+							},
+							"needleColor": {
+								"title": "Needle Color",
+								"content": "Silver color"
+							},
+							"waterproof": {
+								"title": "Waterproof",
+								"content": "5 ATM water resistant"
+							},
+							"menAndLady": {
+								"title": "Men's and Ladies'",
+								"content": "Man’s"
+							}
+						}
+					},
+					{
+						"order": true,
+						"index": "ma060106gr",
+						"model": "MA060106GR",
+						"type": "Lady's",
+						"name": "Monoceros Lady's",
+						"price": "95,000",
+						"ml": "",
+						"comment": {
+							"header": [
+								"Mechanical watches wind automatically when the natural motion of the wearer occurs.<br>All the parts are carefully combined to pursue perfection.　"
+							],
+							"body": [
+								"Couple watches",
+								"Stainless steel straps with good texture and appropriate weight."
+							],
+							"footer": [
+								"Features of the cases: Inspired by traditional Japanese architecture, we pay attention to every detail.<br>Dial: The ring pattern on the dial highlights the beauty of ceramics.<br>Watch hands: Silver color hands which are bright and simple-style.<br>Back Case: Transparent hollow design enables you to admire the motion of the movement and the exquisite carving."
+							]
+						},
+						"property": {
+							"movement": {
+								"title": "Movement",
+								"content": "ETA2671 Made in Swiss,25 stones, automatic winding (with hand-winding function) movement"
+							},
+							"function": {
+								"title": "Function",
+								"content": "Hour, Minute, Second and Calendar hands"
+							},
+							"material": {
+								"title": "Material",
+								"content": "Case: Stainless steel Upper & Back glass: Sapphire"
+							},
+							"band": {
+								"title": "Band",
+								"content": "*Band body: Stainless steel *Buckle: one push with 3 holding type): Stainless steel"
+							},
+							"size": {
+								"title": "Size",
+								"content": "Diameter: About 31.1mm   Thickness:10.7mm"
+							},
+							"dialColor": {
+								"title": "Dial Color",
+								"content": "Silver color"
+							},
+							"needleColor": {
+								"title": "Needle Color",
+								"content": "Silver color"
+							},
+							"waterproof": {
+								"title": "Waterproof",
+								"content": "5 ATM water resistant"
+							},
+							"menAndLady": {
+								"title": "Men's and Ladies'",
+								"content": "women's"
+							}
+						}
+					},
+					{
+						"order": true,
+						"index": "ma060103",
+						"model": "MA060103",
+						"type": "CHRONOGRAPH",
+						"name": "MONOCEROS CHRONOGRAPH",
+						"price": "250,000",
+						"ml":"Limited to 50",
+						"comment": {
+							"header": [
+								"The composition of chronograph watches is complex and delicate. They are fascinating watches.On the main dial are another three small dials for 60-second timing, 30-minute timing and 12-hour timing.Timer works accurately whenever the start button is pressed.Chronograph watches, designed in a simple style, distinguished themselves as fashionable items which have perfect functions.",
+								"Chronograph watches, equipped with Valjoux ETA 7750 movement are able to indicate the date and what day it is. The blue and white dial is equipped with three-dimensional scale. The design is impressive."
+							],
+							"body": [
+								"Innovative and unprecedented chronograph watches.",
+								"Pleasant colors and the three-dimensional scale make it eye-catching for sure.",
+								"The crown with Monoceros pattern.",
+								"Stainless steel straps with good texture and appropriate weight."
+							],
+							"footer": [
+								"Features of the case: every item is combined delicately, displaying sense of luxury.Inspired by traditional Japanese architecture, we pay attention to every detail.The three small dials, processed to have record pattern to highlight the luster."
+							]
+						},
+						"property": {
+							"movement": {
+								"title": "Movement",
+								"content": "Chronograph Valjoux -7750, Made in Swiss, 25 stones, automatic winding (with hand-winding function) movement"
+							},
+							"function": {
+								"title": "Function",
+								"content": "Hour, minute, second hand, chronograph hand (60 seconds totalizer)30 minutes totalizer (12 o’clock position) 12hours totalizer (6 o’clock position), Day date display"
+							},
+							"material": {
+								"title": "Material",
+								"content": "Case: Stainless steel   Upper and back glass: Sapphire glass"
+							},
+							"band": {
+								"title": "Band",
+								"content": "Band body: Stainless-steel Buckle (with push and 3 holding type): Stainless-steel"
+							},
+							"size": {
+								"title": "Size",
+								"content": "Diameter: About 40mm   Thickness:13.8mm"
+							},
+							"dialColor": {
+								"title": "Dial Color",
+								"content": "Two tone (Silver base with light blue)"
+							},
+							"needleColor": {
+								"title": "Needle Color",
+								"content": "Hour, minute hands: sliver color The others: black color"
+							},
+							"waterproof": {
+								"title": "Waterproof",
+								"content": "5 ATM water resistant"
+							},
+							"menAndLady": {
+								"title": "Men's and Ladies'",
+								"content": "Limited to 50 pcs. Production Men’s"
+							}
+						}
+					},
+					{
+						"index": "ma109001",
+						"model": "MA109001",
+						"type": "CHRONOGRAPH",
+						"name": "MONOCEROS CHRONOGRAPH",
+						"price": "150,000",
+						"ml": "End of production",
+						"comment": {
+							"header": [
+								"The composition of chronograph watches is complex and delicate. They are fascinating watches.On the main dial are another three small dials for 60-second timing, 30-minute timing and 12-hour timing.Timer works accurately whenever the start button is pressed.<br>Besides Valjoux 7750 automatic winding movement is equipped, the watch is also able to show the date and what day it is.<br>The watch with the silver dial and the three-dimensional scale is designed in a simple style, distinguished itself as a fashionable item which has perfect functions."
+							],
+							"body": [
+								"With outstanding functions and elegant looks, the watch displays understated luxury.",
+								"The hollow back case enables the customers to take a look at the motion of the movement.",
+								"Sturdy stainless-steel case protects the delicate movement inside.",
+								"The watch’s one touch buckle is easy to use and can avoid scratching the leather band."
+							],
+							"footer": [
+								"The stainless-steel case is shining and eye-catching.<br>The silver dial is neat and full of simplicity.<br>The watch hands are made of steel, smelting into blue steel and demonstrating the ultimacy of the craft."
+							]
+						},
+						"property": {
+							"movement": {
+								"title": "Movement",
+								"content": "Chronograph Valjoux -7750, Made in Swiss, 25 stones, automatic winding (with hand-winding function) movement"
+							},
+							"function": {
+								"title": "Function",
+								"content": "Hour, minute, second hand, chronograph hand (60 seconds totalizer)30 minutes totalizer (12 o’clock position) 12hours totalizer (6 o’clock position), Day date display"
+							},
+							"material": {
+								"title": "Material",
+								"content": "Case: Stainless steel   Upper and back glass: Sapphire"
+							},
+							"band": {
+								"title": "Band",
+								"content": "Band body:Finest crocodile leatherBuckle (with push and 3 holding type): Stainless steel"
+							},
+							"size": {
+								"title": "Size",
+								"content": "Diameter: About 40mm   Thickness:13.8mm"
+							},
+							"dialColor": {
+								"title": "Dial Color",
+								"content": "Silver color"
+							},
+							"needleColor": {
+								"title": "Needle Color",
+								"content": "Steel blue color"
+							},
+							"waterproof": {
+								"title": "Waterproof",
+								"content": "5 ATM water resistant"
+							},
+							"menAndLady": {
+								"title": "Men's and Ladies'",
+								"content": "Man’s End of production"
+							}
+						}
+					},
+					{
+						"index": "ma410001yg",
+						"model": "MA410001YG",
+						"type": "SKELTON",
+						"name": "Monoceros SKELTON",
+						"price": "500,000",
+						"ml": "End of production",
+						"comment": {
+							"header": [
+								"High-class Swiss-made automatic-winding movement is adopted.<br>Delicate parts are carefully combined to display gorgeousness naturally.<br>The 18K gold luxury case to the high specification is used to provide perfect protection for the movement.<br>The leather strap with one-touch buckle design is simple and neat and can prevent the strap from scratching."
+							],
+							"body": [
+								"The hollow design enables the customers to appreciate the beauty of the movement.",
+								"The gorgeous carvings on the spinning rotor can be seen through the glass back.",
+								"Simple and neat one-touch buckle design prevents the leather strap from scratching."
+							],
+							"footer": [
+							]
+						},
+						"property": {
+							"movement": {
+								"title": "Movement",
+								"content": "ETA2892-A2 base, Made in Swiss, 21 stones, automatic winding (with hand-winding function) movement"
+							},
+							"function": {
+								"title": "Function",
+								"content": "Hour, minute, second hands"
+							},
+							"material": {
+								"title": "Material",
+								"content": "Case and crown: K18YGUpper and back glass: Sapphire glass"
+							},
+							"band": {
+								"title": "Band",
+								"content": "Band body:Finest crocodile leatherBuckle (with push and 3 holding type): Stainless steel"
+							},
+							"size": {
+								"title": "Size",
+								"content": "Diameter: About 34.5mm   Thickness:9mm"
+							},
+							"dialColor": {
+								"title": "Dial Color",
+								"content": "No dial"
+							},
+							"needleColor": {
+								"title": "Needle Color",
+								"content": "Blue steel color"
+							},
+							"waterproof": {
+								"title": "Waterproof",
+								"content": "5 ATM water resistant"
+							},
+							"menAndLady": {
+								"title": "Men's and Ladies'",
+								"content": "End of production"
+							}
+						}
+					},
+					{
+						"index": "ma410001wg",
+						"model": "MA410001WG",
+						"type": "SKELTON",
+						"name": "Monoceros SKELTON",
+						"price": "600,000",
+						"ml": "End of production",
+						"comment": {
+							"header": [
+								"High-class Swiss-made automatic-winding movement is adopted.<br>Delicate parts are carefully combined to display gorgeousness naturally.<br>The 18K gold luxury case to the high specification is used to provide perfect protection for the movement.<br>The leather strap with one-touch buckle design is simple and neat and can prevent the strap from scratching."
+							],
+							"body": [
+								"The hollow design enables the customers to appreciate the beauty of the movement.",
+								"The gorgeous carvings on the spinning rotor can be seen through the glass back.",
+								"Simple and neat one-touch buckle design prevents the leather strap from scratching."
+							],
+							"footer": [
+							]
+						},
+						"property": {
+							"movement": {
+								"title": "Movement",
+								"content": "ETA2892-A2 base, Made in Swiss, 21 stones, automatic winding (with hand-winding function) movement"
+							},
+							"function": {
+								"title": "Function",
+								"content": "Hour, minute, second hands"
+							},
+							"material": {
+								"title": "Material",
+								"content": "Case and crown: K18YGUpper and back glass: Sapphire glass"
+							},
+							"band": {
+								"title": "Band",
+								"content": "Band body:Finest crocodile leatherBuckle (with push and 3 holding type): Stainless steel"
+							},
+							"size": {
+								"title": "Size",
+								"content": "Diameter: About 34.5mm   Thickness:9mm"
+							},
+							"dialColor": {
+								"title": "Dial Color",
+								"content": "No dial"
+							},
+							"needleColor": {
+								"title": "Needle Color",
+								"content": "Blue steel color"
+							},
+							"waterproof": {
+								"title": "Waterproof",
+								"content": "5 ATM water resistant"
+							},
+							"menAndLady": {
+								"title": "Men's and Ladies'",
+								"content": "End of production"
+							}
+						}
+					},
+					{
+						"order": true,
+						"index": "ma060102",
+						"model": "MA060102",
+						"type": "POWERRESERVE",
+						"name": "Monoceros POWERRESERVE",
+						"price": "200,000",
+						"ml": "",
+						"comment": {
+							"header": [
+								"The automatic winding movement is used. The rotor inside the watch winds automatically once it senses the natural motion of the arm.<br>Equipped with an Indige-Gauge, the watch is able to display the remaining time of the clockwork.<br>It’s a type that collectors will never miss. GMT showing the 24-hour time is also available.<br>The high performance makes it the model that mechanical watch collectors are desired for.",
+								"The remaining power restored by the automatic winding is shown at the 6 o'clock position.<br>Equipped with the GMT 24-hour minute dial, the watch is the favorite style of the collectors. <br>The stylish design, multiple functions make the watch desirable and has always been a popular product."
+							],
+							"body": [
+								"The stylish looks never tire you.",
+								"The blue stainless-steel hand shines on the ceramic dial.",
+								"The crown has an engraving of Monoceros pattern.",
+								"The stainless straps have outstanding quality and appropriate weight."
+							],
+							"footer": [
+								"Features of the case: Inspired by traditional Japanese architecture, we pay attention to every detail.<br>Dial: The outer circle is processed to have record pattern to highlight the luster.<br>Watch hands: Blue stainless-steel hands, smelted, displays extreme craftsmanship and design.The hollow back enables the customers to appreciate the beauty of the movement."
+							]
+						},
+						"property": {
+							"movement": {
+								"title": "Movement",
+								"content": "ETA2892-A2 base, Made in Swiss, 21 stones, automatic winding (with hand-winding function) movement"
+							},
+							"function": {
+								"title": "Function",
+								"content": "Hour, minute, second, power reserve (mainspring duration meter), GMT (24-Hour), Calendar"
+							},
+							"material": {
+								"title": "Material",
+								"content": "Case: Stainless steel   Upper and back glass: Sapphire glass"
+							},
+							"band": {
+								"title": "Band",
+								"content": "Band body: Stainless-steel    Buckle (with push and 3 holding type): Stainless-steel"
+							},
+							"size": {
+								"title": "Size",
+								"content": "Diameter: About 37.8mm   Thickness:11.5mm"
+							},
+							"dialColor": {
+								"title": "Dial Color",
+								"content": "Silver color"
+							},
+							"needleColor": {
+								"title": "Needle Color",
+								"content": "Blue steel color"
+							},
+							"waterproof": {
+								"title": "Waterproof",
+								"content": "5 ATM water resistant"
+							},
+							"menAndLady": {
+								"title": "Men's and Ladies'",
+								"content": ""
+							}
+						}
+					},
+					{
+						"index": "ma906001s",
+						"model": "MA906001S",
+						"type": "POWERRESERVE",
+						"name": "Monoceros POWERRESERVE",
+						"price": "100,000",
+						"ml": "End of production",
+						"comment": {
+							"header": [
+								"The automatic winding movement is used. The rotor inside the watch winds automatically once it senses the natural motion of the arm.<br>Equipped with an Indige-Gauge, the watch is able to display the remaining time of the clockwork.<br>It’s a type that collectors will never miss. GMT showing the 24-hour time is also available.<br>The high performance makes it the model that mechanical watch collectors are desired for.<br>The remaining power restored by the automatic winding is shown at the 6 o'clock position.<br>Equipped with the GMT 24-hour minute dial, the watch is the favorite style of the collectors.<br>The stylish design, multiple functions make the watch desirable and has always been a popular product."
+							],
+							"body": [
+								"The stylish looks never tire you.",
+								"It’s easy to wear the watch with one touch buckle and can avoid scratching the leather strap."
+							],
+							"footer": [
+								"Features of the case: Making good use of the feature of the stainless steel, the watch’s luster is naturally displayed.<br>Dial: The design of the dial is in a simple style. If the dial is black, silver hands are used.<br>Watch hands: Available in silver, light golden and blue stainless-steel color.<br>The hollow back enables the customers to appreciate the beauty of the movement.<br>The material of the strap is from Teju (a kind of lizard)."
+							]
+						},
+						"property": {
+							"movement": {
+								"title": "Movement",
+								"content": "ETA2892-A2 base, Made in Swiss, 21 stones, automatic winding (with hand-winding function) movement"
+							},
+							"function": {
+								"title": "Function",
+								"content": "Hour, minute, second, power reserve (mainspring duration meter), GMT (24-Hour), Calendar"
+							},
+							"material": {
+								"title": "Material",
+								"content": "Case: Stainless steel   Upper and back glass: Sapphire glass"
+							},
+							"band": {
+								"title": "Band",
+								"content": "Leather band: TejuBuckle (with push and 3 holding type): Stainless-steel"
+							},
+							"size": {
+								"title": "Size",
+								"content": "Diameter: About 35mm   Thickness:11.5mm"
+							},
+							"dialColor": {
+								"title": "Dial Color",
+								"content": "Silver color"
+							},
+							"needleColor": {
+								"title": "Needle Color",
+								"content": "Blue steel color"
+							},
+							"waterproof": {
+								"title": "Waterproof",
+								"content": "5 ATM water resistant"
+							},
+							"menAndLady": {
+								"title": "Men's and Ladies'",
+								"content": "End of production"
+							}
+						}
+					},
+					{
+						"index": "ma906001g",
+						"model": "MA906001G",
+						"type": "POWERRESERVE",
+						"name": "Monoceros POWERRESERVE",
+						"price": "100,000",
+						"ml": "End of production",
+						"comment": {
+							"header": [
+								"The automatic winding movement is used. The rotor inside the watch winds automatically once it senses the natural motion of the arm.<br>Equipped with an Indige-Gauge, the watch is able to display the remaining time of the clockwork.<br>It’s a type that collectors will never miss. GMT showing the 24-hour time is also available.<br>The high performance makes it the model that mechanical watch collectors are desired for.<br>The remaining power restored by the automatic winding is shown at the 6 o'clock position.<br>Equipped with the GMT 24-hour minute dial, the watch is the favorite style of the collectors.<br>The stylish design, multiple functions make the watch desirable and has always been a popular product."
+							],
+							"body": [
+								"The stylish looks never tire you.",
+								"It’s easy to wear the watch with one touch buckle and can avoid scratching the leather strap."
+							],
+							"footer": [
+								"Features of the case: Making good use of the feature of the stainless steel, the watch’s luster is naturally displayed.<br>Dial: The design of the dial is in a simple style. If the dial is black, silver hands are used.<br>Watch hands: Available in silver, light golden and blue stainless-steel color.<br>The hollow back enables the customers to appreciate the beauty of the movement.<br>The material of the strap is from Teju (a kind of lizard)."
+							]
+						},
+						"property": {
+							"movement": {
+								"title": "Movement",
+								"content": "ETA2892-A2 base, Made in Swiss, 21 stones, automatic winding (with hand-winding function) movement"
+							},
+							"function": {
+								"title": "Function",
+								"content": "Hour, minute, second, power reserve (mainspring duration meter), GMT (24-Hour), Calendar"
+							},
+							"material": {
+								"title": "Material",
+								"content": "Case: Stainless steel   Upper and back glass: Sapphire glass"
+							},
+							"band": {
+								"title": "Band",
+								"content": "Leather band: TejuBuckle (with push and 3 holding type): Stainless-steel"
+							},
+							"size": {
+								"title": "Size",
+								"content": "Diameter: About 35mm   Thickness:11.5mm"
+							},
+							"dialColor": {
+								"title": "Dial Color",
+								"content": "Light golden color"
+							},
+							"needleColor": {
+								"title": "Needle Color",
+								"content": "Blue steel color"
+							},
+							"waterproof": {
+								"title": "Waterproof",
+								"content": "5 ATM water resistant"
+							},
+							"menAndLady": {
+								"title": "Men's and Ladies'",
+								"content": "End of production"
+							}
+						}
+					},
+					{
+						"index": "ma906001b",
+						"model": "MA906001B",
+						"type": "POWERRESERVE",
+						"name": "Monoceros POWERRESERVE",
+						"price": "100,000",
+						"ml": "End of production",
+						"comment": {
+							"header": [
+								"The automatic winding movement is used. The rotor inside the watch winds automatically once it senses the natural motion of the arm.<br>Equipped with an Indige-Gauge, the watch is able to display the remaining time of the clockwork.<br>It’s a type that collectors will never miss. GMT showing the 24-hour time is also available.<br>The high performance makes it the model that mechanical watch collectors are desired for.<br>The remaining power restored by the automatic winding is shown at the 6 o'clock position.<br>Equipped with the GMT 24-hour minute dial, the watch is the favorite style of the collectors.<br>The stylish design, multiple functions make the watch desirable and has always been a popular product."
+							],
+							"body": [
+								"The stylish looks never tire you.",
+								"It’s easy to wear the watch with one touch buckle and can avoid scratching the leather strap."
+							],
+							"footer": [
+								"Features of the case: Making good use of the feature of the stainless steel, the watch’s luster is naturally displayed.<br>Dial: The design of the dial is in a simple style. If the dial is black, silver hands are used.<br>Watch hands: Available in silver, light golden and blue stainless-steel color.<br>The hollow back enables the customers to appreciate the beauty of the movement.<br>The material of the strap is from Teju (a kind of lizard)."
+							]
+						},
+						"property": {
+							"movement": {
+								"title": "Movement",
+								"content": "ETA2892-A2 base, Made in Swiss, 21 stones, automatic winding (with hand-winding function) movement"
+							},
+							"function": {
+								"title": "Function",
+								"content": "Hour, minute, second, power reserve (mainspring duration meter), GMT (24-Hour), Calendar"
+							},
+							"material": {
+								"title": "Material",
+								"content": "Case: Stainless steel   Upper and back glass: Sapphire glass"
+							},
+							"band": {
+								"title": "Band",
+								"content": "Leather band: TejuBuckle (with push and 3 holding type): Stainless-steel"
+							},
+							"size": {
+								"title": "Size",
+								"content": "Diameter: About 35mm   Thickness:11.5mm"
+							},
+							"dialColor": {
+								"title": "Dial Color",
+								"content": "Black"
+							},
+							"needleColor": {
+								"title": "Needle Color",
+								"content": "Silver color"
+							},
+							"waterproof": {
+								"title": "Waterproof",
+								"content": "5 ATM water resistant"
+							},
+							"menAndLady": {
+								"title": "Men's and Ladies'",
+								"content": "End of production"
+							}
+						}
+					},
+					{
+						"index": "ma410002s",
+						"model": "MA410002S",
+						"type": "DOCTOR'S",
+						"name": "Monoceros DOCTOR'S",
+						"price": "68,000",
+						"ml": "End of production",
+						"comment": {
+							"header": [
+								"In the mid-twentieth century, a professional watch designed for doctors appeared.<br>Doctor's watches have a distinctive feature that is generally in the shape of square,and under the dial is a large area for a second hand, which is helpful for the doctor to take the pulseof the patient according to the number of seconds. The unique style not only attracts the attention of the medical profession, but also is favored by many fashionistas.<br>Through more exquisite design, this kind of watch has evolved into the present style. (One with a white dial and one with a black dial)"
+							],
+							"body": [
+								"Unique square case.",
+								"Simple side lines.",
+								"The elegant back case is slightly curved to be ergonomic.",
+								"An independent area for the second hand enhances the efficiency of recording time."
+							],
+							"footer": [
+							]
+						},
+						"property": {
+							"movement": {
+								"title": "Movement",
+								"content": "Made in Swiss, 17 stones, with hand-winding function movement"
+							},
+							"function": {
+								"title": "Function",
+								"content": "Hour disc (12H position)Minute, second hands (6H position)"
+							},
+							"material": {
+								"title": "Material",
+								"content": "Case: Ag925 Back: Stainless-steel Upper glass: Sapphire"
+							},
+							"band": {
+								"title": "Band",
+								"content": "Band body: Finest crocodile leather Buckle (with push and 3 holding type): Stainless steel"
+							},
+							"size": {
+								"title": "Size",
+								"content": "Length: about 38.5mm Width: about 4.8mm Thickness: about 8.9mm"
+							},
+							"dialColor": {
+								"title": "Dial Color",
+								"content": "Black"
+							},
+							"needleColor": {
+								"title": "Needle Color",
+								"content": "Golden"
+							},
+							"waterproof": {
+								"title": "Waterproof",
+								"content": "5 ATM water resistant"
+							},
+							"menAndLady": {
+								"title": "Men's and Ladies'",
+								"content": "End of production"
+							}
+						}
+					},
+					{
+						"index": "ma410002g",
+						"model": "MA410002G",
+						"type": "DOCTOR'S",
+						"name": "Monoceros DOCTOR'S",
+						"price": "68,000",
+						"ml": "End of production",
+						"comment": {
+							"header": [
+								"In the mid-twentieth century, a professional watch designed for doctors appeared.<br>Doctor's watches have a distinctive feature that is generally in the shape of square,and under the dial is a large area for a second hand, which is helpful for the doctor to take the pulseof the patient according to the number of seconds. The unique style not only attracts the attention of the medical profession, but also is favored by many fashionistas.<br>Through more exquisite design, this kind of watch has evolved into the present style. (One with a white dial and one with a black dial)"
+							],
+							"body": [
+								"Unique square case.",
+								"Simple side lines.",
+								"The elegant back case is slightly curved to be ergonomic.",
+								"An independent area for the second hand enhances the efficiency of recording time."
+							],
+							"footer": [
+							]
+						},
+						"property": {
+							"movement": {
+								"title": "Movement",
+								"content": "Made in Swiss, 17 stones, with hand-winding function movement"
+							},
+							"function": {
+								"title": "Function",
+								"content": "Hour disc (12H position)Minute, second hands (6H position)"
+							},
+							"material": {
+								"title": "Material",
+								"content": "Case: Ag925 Back: Stainless-steel Upper glass: Sapphire"
+							},
+							"band": {
+								"title": "Band",
+								"content": "Band body: Finest crocodile leather Buckle (with push and 3 holding type): Stainless steel"
+							},
+							"size": {
+								"title": "Size",
+								"content": "Length: about 38.5mm Width: about 4.8mm Thickness: about 8.9mm"
+							},
+							"dialColor": {
+								"title": "Dial Color",
+								"content": "White"
+							},
+							"needleColor": {
+								"title": "Needle Color",
+								"content": "Golden"
+							},
+							"waterproof": {
+								"title": "Waterproof",
+								"content": "5 ATM water resistant"
+							},
+							"menAndLady": {
+								"title": "Men's and Ladies'",
+								"content": "End of production"
+							}
+						}
+					},
+					{
+						"index": "ma911001",
+						"model": "MA911001",
+						"type": "POINTER　DATE",
+						"name": "Monoceros POINTER　DATE",
+						"price": "75,000",
+						"ml": "End of production",
+						"comment": {
+							"header": [
+								"The exquisite watch hand in the shape of the crescent moon helps you to monitor the exact date, practical and beautiful.<br>Another little second hand around six o’clock looking cute and displaying elegance is favored by collectors.<br>Swiss-made automatic winding movement with 29 stones is adopted."
+							],
+							"body": [
+								"High-class embossed dial enables the variability depending on different viewing angles",
+								"The exquisite watch hand in the shape of the crescent moon and the cute little second hand are eye-catching.",
+								"The design of the transparent back case enables the customers to see the motion of the movement.",
+								"The watch’s one touch buckle is easy to use and can avoid scratching the leather band."
+							],
+							"footer": [
+								"Features of the cases: Inspired by traditional Japanese architecture, we pay attention to every detail.<br>Dial: Being Guilloche carved on the inner circle. Another small dial around six o’clock is processed to have record pattern to highlight the luster.<br>Watch hands: Made of steel, smelted into blue steel. It displays extreme craftsmanship.<br>The exquisite watch hand in the shape of the crescent moon shows the exact date.<br>The back case: Hollow design enables the customers to admire the motion of the movement and the exquisite graving.　"
+							]
+						},
+						"property": {
+							"movement": {
+								"title": "Movement",
+								"content": "ETA2836 base, Made in Swiss, 29 stones, automatic winding (with hand-winding function) movement"
+							},
+							"function": {
+								"title": "Function",
+								"content": "Hour, minute, small second, date pointer"
+							},
+							"material": {
+								"title": "Material",
+								"content": "Case: Stainless steel   Upper and back glass: Sapphire"
+							},
+							"band": {
+								"title": "Band",
+								"content": "Band body:Finest crocodile leather Buckle (with push and 3 holding type): Stainless steel"
+							},
+							"size": {
+								"title": "Size",
+								"content": "Diameter: About 35mm   Thickness:11.8mm"
+							},
+							"dialColor": {
+								"title": "Dial Color",
+								"content": "Silver"
+							},
+							"needleColor": {
+								"title": "Needle Color",
+								"content": "Hour, minute, small second: steel blue color Date pointer: Red crescent on the top of silver pointer"
+							},
+							"waterproof": {
+								"title": "Waterproof",
+								"content": "5 ATM water resistant"
+							},
+							"menAndLady": {
+								"title": "Men's and Ladies'",
+								"content": "End of production"
+							}
+						}
+					},
+					{
+						"order": true,
+						"index": "ma060104",
+						"model": "MA060104",
+						"type": "MOON PHAES",
+						"name": "Monoceros MOON PHAES",
+						"price": "250,000",
+						"ml": "Limited to 25",
+						"comment": {
+							"header": [
+								"Based on 12 o’clock, the left dial indicates the month, and the right dial uses a crescent-shaped pointer to indicate the date and date.The moon-shaped window at 6 o’clock shows the phase of the moon (about 29.5 days as a cycle) It’s a beautiful and practical watch."
+							],
+							"body": [
+								"The crown is carved with Monoceros pattern.",
+								"Stainless steel straps with style and nice texture."
+							],
+							"footer": [
+								"The feature of the cases: stainless steel cases, exquisite and detail- attended. It's hard not to feel its existence.<br>Dial: On the inner circle, wave patterns are embossed to add elegance.<br>Watch hands are in elegant silver."
+							]
+						},
+						"property": {
+							"movement": {
+								"title": "Movement",
+								"content": "Dubois et　Depraz 9000 ETA 284-2-2 base, Swiss made, 25 stones, automatic winding (with hand-winding function) movement"
+							},
+							"function": {
+								"title": "Function",
+								"content": "Hour, minute, second, month, day, date, moon phase display (about 29.5 days/monthly)"
+							},
+							"material": {
+								"title": "Material",
+								"content": "Case: Stainless-steel color Upper and back glass: Sapphire"
+							},
+							"band": {
+								"title": "Band",
+								"content": "Band body: Stainless steel    Buckle (with push and 3 holding type): Stainless steel"
+							},
+							"size": {
+								"title": "Size",
+								"content": "Diameter: About 38mm   Thickness:11.8mm"
+							},
+							"dialColor": {
+								"title": "Dial Color",
+								"content": "Silver color"
+							},
+							"needleColor": {
+								"title": "Needle Color",
+								"content": "Hour, minute, second: silver color Day: red moon motif is at the apex of the silver hand"
+							},
+							"waterproof": {
+								"title": "Waterproof",
+								"content": "5 ATM water resistant"
+							},
+							"menAndLady": {
+								"title": "Men's and Ladies'",
+								"content": "Limited to 50 pcs. Production"
+							}
+						}
+					},
+					{
+						"order": true,
+						"index": "ma060105s",
+						"model": "MA060105S",
+						"type": "Man’s",
+						"name": "Monoceros Man’s",
+						"price": "95,000",
+						"ml": "",
+						"comment": {
+							"header": [
+								"Mechanical watches wind automatically when the natural motion of the wearer occurs.<br>All the parts are carefully combined to pursue perfection.　"
+							],
+							"body": [
+								"Couple watches",
+								"Stainless steel straps with good texture and appropriate weight."
+							],
+							"footer": [
+								"Features of the cases: Inspired by traditional Japanese architecture, we pay attention to every detail.<br>Dial: The ring pattern on the dial highlights the beauty of ceramics.<br>Watch hands: Silver color hands which are bright and simple-style.<br>Back Case: Transparent hollow design enables you to admire the motion of the movement and the exquisite carving."
+							]
+						},
+						"property": {
+							"movement": {
+								"title": "Movement",
+								"content": "ETA2824-2 Made in Swiss,25 stones, automatic winding (with hand-winding function) movement"
+							},
+							"function": {
+								"title": "Function",
+								"content": "Hour, Minute, Second and Calendar hands"
+							},
+							"material": {
+								"title": "Material",
+								"content": "Case: Stainless steel   Upper & Back glass: Sapphire"
+							},
+							"band": {
+								"title": "Band",
+								"content": "*Band body: Stainless steel *Buckle: one push with 3 holding type): Stainless steel"
+							},
+							"size": {
+								"title": "Size",
+								"content": "Diameter: About 37.8mm   Thickness:10.5mm"
+							},
+							"dialColor": {
+								"title": "Dial Color",
+								"content": "Silver color"
+							},
+							"needleColor": {
+								"title": "Needle Color",
+								"content": "Silver color"
+							},
+							"waterproof": {
+								"title": "Waterproof",
+								"content": "5 ATM water resistant"
+							},
+							"menAndLady": {
+								"title": "Men's and Ladies'",
+								"content": "Man’s"
+							}
+						}
+					},
+					{
+						"order": true,
+						"index": "ma060105bu",
+						"model": "MA060105Bu",
+						"type": "Man’s",
+						"name": "Monoceros Man’s",
+						"price": "95,000",
+						"ml": "",
+						"comment": {
+							"header": [
+								"Mechanical watches wind automatically when the natural motion of the wearer occurs.<br>All the parts are carefully combined to pursue perfection.　"
+							],
+							"body": [
+								"Couple watches",
+								"Stainless steel straps with good texture and appropriate weight."
+							],
+							"footer": [
+								"Features of the cases: Inspired by traditional Japanese architecture, we pay attention to every detail.<br>Dial: The ring pattern on the dial highlights the beauty of ceramics.<br>Watch hands: Silver color hands which are bright and simple-style.<br>Back Case: Transparent hollow design enables you to admire the motion of the movement and the exquisite carving."
+							]
+						},
+						"property": {
+							"movement": {
+								"title": "Movement",
+								"content": "ETA2824-2 Made in Swiss,25 stones, automatic winding (with hand-winding function) movement"
+							},
+							"function": {
+								"title": "Function",
+								"content": "Hour, Minute, Second and Calendar hands"
+							},
+							"material": {
+								"title": "Material",
+								"content": "Case: Stainless steel   Upper & Back glass: Sapphire"
+							},
+							"band": {
+								"title": "Band",
+								"content": "*Band body: Stainless steel *Buckle: one push with 3 holding type): Stainless steel"
+							},
+							"size": {
+								"title": "Size",
+								"content": "Diameter: About 37.8mm   Thickness:10.5mm"
+							},
+							"dialColor": {
+								"title": "Dial Color",
+								"content": "Dark blue"
+							},
+							"needleColor": {
+								"title": "Needle Color",
+								"content": "Silver color"
+							},
+							"waterproof": {
+								"title": "Waterproof",
+								"content": "5 ATM water resistant"
+							},
+							"menAndLady": {
+								"title": "Men's and Ladies'",
+								"content": "Man’s"
+							}
+						}
+					},
+					{
+						"order": true,
+						"index": "ma060106s",
+						"model": "MA060106S",
+						"type": "Lady's",
+						"name": "Monoceros Lady's",
+						"price": "95,000",
+						"ml": "",
+						"comment": {
+							"header": [
+								"Mechanical watches wind automatically when the natural motion of the wearer occurs.<br>All the parts are carefully combined to pursue perfection.　"
+							],
+							"body": [
+								"Couple watches",
+								"Stainless steel straps with good texture and appropriate weight."
+							],
+							"footer": [
+								"Features of the cases: Inspired by traditional Japanese architecture, we pay attention to every detail.<br>Dial: The ring pattern on the dial highlights the beauty of ceramics.<br>Watch hands: Silver color hands which are bright and simple-style.<br>Back Case: Transparent hollow design enables you to admire the motion of the movement and the exquisite carving."
+							]
+						},
+						"property": {
+							"movement": {
+								"title": "Movement",
+								"content": "ETA2671 Made in Swiss,25 stones, automatic winding (with hand-winding function) movement"
+							},
+							"function": {
+								"title": "Function",
+								"content": "Hour, Minute, Second and Calendar hands"
+							},
+							"material": {
+								"title": "Material",
+								"content": "Case: Stainless steel Upper & Back glass: Sapphire"
+							},
+							"band": {
+								"title": "Band",
+								"content": "*Band body: Stainless steel *Buckle: one push with 3 holding type): Stainless steel"
+							},
+							"size": {
+								"title": "Size",
+								"content": "Diameter: About 31.1mm   Thickness:10.7mm"
+							},
+							"dialColor": {
+								"title": "Dial Color",
+								"content": "Silver color"
+							},
+							"needleColor": {
+								"title": "Needle Color",
+								"content": "Silver color"
+							},
+							"waterproof": {
+								"title": "Waterproof",
+								"content": "5 ATM water resistant"
+							},
+							"menAndLady": {
+								"title": "Men's and Ladies'",
+								"content": "women's"
+							}
+						}
+					},
+					{
+						"order": true,
+						"index": "ma060106bu",
+						"model": "MA060106Bu",
+						"type": "Lady's",
+						"name": "Monoceros Lady's",
+						"price": "95,000",
+						"ml": "",
+						"comment": {
+							"header": [
+								"Mechanical watches wind automatically when the natural motion of the wearer occurs.<br>All the parts are carefully combined to pursue perfection.　"
+							],
+							"body": [
+								"Couple watches",
+								"Stainless steel straps with good texture and appropriate weight."
+							],
+							"footer": [
+								"Features of the cases: Inspired by traditional Japanese architecture, we pay attention to every detail.<br>Dial: The ring pattern on the dial highlights the beauty of ceramics.<br>Watch hands: Silver color hands which are bright and simple-style.<br>Back Case: Transparent hollow design enables you to admire the motion of the movement and the exquisite carving."
+							]
+						},
+						"property": {
+							"movement": {
+								"title": "Movement",
+								"content": "ETA2671 Made in Swiss,25 stones, automatic winding (with hand-winding function) movement"
+							},
+							"function": {
+								"title": "Function",
+								"content": "Hour, Minute, Second and Calendar hands"
+							},
+							"material": {
+								"title": "Material",
+								"content": "Case: Stainless steel Upper & Back glass: Sapphire"
+							},
+							"band": {
+								"title": "Band",
+								"content": "*Band body: Stainless steel *Buckle: one push with 3 holding type): Stainless steel"
+							},
+							"size": {
+								"title": "Size",
+								"content": "Diameter: About 31.1mm   Thickness:10.7mm"
+							},
+							"dialColor": {
+								"title": "Dial Color",
+								"content": "Dark blue"
+							},
+							"needleColor": {
+								"title": "Needle Color",
+								"content": "Silver color"
+							},
+							"waterproof": {
+								"title": "Waterproof",
+								"content": "5 ATM water resistant"
+							},
+							"menAndLady": {
+								"title": "Men's and Ladies'",
+								"content": "women's"
+							}
+						}
+					},
+					{
+						"index": "ma906002",
+						"model": "MA906002",
+						"type": "Man’s",
+						"name": "Monoceros Man’s",
+						"price": "60,000",
+						"ml": "End of production",
+						"comment": {
+							"header": [
+								"Mechanical watches wind automatically when the natural motion of the wearer occurs.<br>All the parts are carefully combined to pursue perfection."
+							],
+							"body": [
+								"Couple watches",
+								"Embossed dials present multiple looks when you look at the watch from different angles.",
+								"The design of glass back case enables the customers to Performance of extreme craftsmanship.",
+								"One-button clasps are easy to operate and can prevent the straps from scratches"
+							],
+							"footer": [
+								"The features of the case: Inspired by the delicacy of Japanese architecture,　every detail is taken into concern.<br>Dial: Being Guilloche carved and having ring pattern around the circle.<br>Watch hands: Made of steel, smelted into blue steel. It displays extreme craftsmanship.<br>The back case: Hollow design enables the customers to admire the motion of the movement and the exquisite graving."
+							]
+						},
+						"property": {
+							"movement": {
+								"title": "Movement",
+								"content": "ETA2824-2 Made in Swiss,25 stones, automatic winding (with hand-winding function) movement"
+							},
+							"function": {
+								"title": "Function",
+								"content": "Hour, Minute, Second and Calendar hands"
+							},
+							"material": {
+								"title": "Material",
+								"content": "Case: Stainless steel   Upper & Back glass: Sapphire"
+							},
+							"band": {
+								"title": "Band",
+								"content": "*Band body: Top quality teju leather *Buckle: one push with 3 holding type): Stainless steel"
+							},
+							"size": {
+								"title": "Size",
+								"content": "Diameter: About 35mm   Thickness:10.8mm"
+							},
+							"dialColor": {
+								"title": "Dial Color",
+								"content": "Blue steel color"
+							},
+							"needleColor": {
+								"title": "Needle Color",
+								"content": "Silver color"
+							},
+							"waterproof": {
+								"title": "Waterproof",
+								"content": "5 ATM water resistant"
+							},
+							"menAndLady": {
+								"title": "Men's and Ladies'",
+								"content": "Man’s End of production"
+							}
+						}
+					},
+					{
+						"index": "ma906003",
+						"model": "MA906003",
+						"type": "Women's",
+						"name": "Monoceros Women’s",
+						"price": "60,000",
+						"ml": "End of production",
+						"comment": {
+							"header": [
+								"Mechanical watches wind automatically when the natural motion of the wearer occurs.<br>All the parts are carefully combined to pursue perfection."
+							],
+							"body": [
+								"Couple watches",
+								"Embossed dials present multiple looks when you look at the watch from different angles.",
+								"The design of glass back case enables the customers to Performance of extreme craftsmanship.",
+								"One-button clasps are easy to operate and can prevent the straps from scratches"
+							],
+							"footer": [
+								"The features of the case: Inspired by the delicacy of Japanese architecture,　every detail is taken into concern.<br>Dial: Being Guilloche carved and having ring pattern around the circle.<br>Watch hands: Made of steel, smelted into blue steel. It displays extreme craftsmanship.<br>The back case: Hollow design enables the customers to admire the motion of the movement and the exquisite graving."
+							]
+						},
+						"property": {
+							"movement": {
+								"title": "Movement",
+								"content": "ETA2671, Made in Swiss,25 stones, automatic winding (with hand-winding function) movement"
+							},
+							"function": {
+								"title": "Function",
+								"content": "Hour, Minute, Second and Calendar hands"
+							},
+							"material": {
+								"title": "Material",
+								"content": "Case: Stainless steel   Upper & Back glass: Sapphire"
+							},
+							"band": {
+								"title": "Band",
+								"content": "*Band body: Top quality crocodile leather *Buckle: Stainless steel"
+							},
+							"size": {
+								"title": "Size",
+								"content": "Diameter: About 26mm   Thickness:10.3mm"
+							},
+							"dialColor": {
+								"title": "Dial Color",
+								"content": "Blue steel color"
+							},
+							"needleColor": {
+								"title": "Needle Color",
+								"content": "Silver color"
+							},
+							"waterproof": {
+								"title": "Waterproof",
+								"content": "5 ATM water resistant"
+							},
+							"menAndLady": {
+								"title": "Men's and Ladies'",
+								"content": "women's End of production"
+							}
+						}
+					}
+				]
+			},
+			"feature": {
+				"tabName": "Feature",
+				"data": [
+					"Combined Swiss made movements with excellent processing techniques; our company presents orthodox mechanical watches in an adorable simple style.",
+					"Monoceros is a scientific name for a unihorn whale living in the Arctic Ocean. The way it looks like symbolizes the brand image we are pursuing: Calm, elegant, persevering and fearless.",
+					"◯Feature of Monoceros Watches<br>One of the features that Monoceros possesses is its scarcity. We can only make fifty monoceros watches yearly.　In an era when almost everyone has seven watches, Monoceros watches are high-class collections that you can’t miss. What distinguishes us from other products is that we are hand-made boutique with scarcity and high quality.",
+					"From different angles you look at Monoceros watches, the excellent craftsmanship and high quality can be told. We try hard to meet your need comprehensively.<br>We adopt Swiss-made ETA base to make the movements with special functions. The watches can wind both automatically and manually. The function strengthens the accuracy of time.<br>As for the choice of the movement, a crucial part for making a watch, we constantly cooperate with specific Swiss movement manufacturer to get the parts in making watches. This enables us to use the top movements to make the watches of great charm."
+				]
+			},
+			"design": {
+				"tabName": "Design",
+				"data": {
+					"left": [
+						"<strong>◯The design of the watch cases (1)<br></strong>We constantly pursue perfection, using exquisite processing techniques to make attractive cases.The frame is modified to make the case become one-piece case in a neat style.<br>The frame is modified to make the case become one-piece case in a neat style.<br>Inspired by traditional Japanese architecture, we incorporate the art in the making of the watch cases.<br>Chronograph wrist watches have Japanese architecture soul.<br>Parts are separated into several fragments to make a dynamic design.Streamlined watch lugs and other parts are carefully combined so that we make the watches send out unique charm.",
+						"Generally, Swiss made watches can’t be made by simply combining several parts, and furthermore exquisite cases take much more costs and need more processing procedures. However, being inspired by the art of traditional Japan architecture, we use meticulous techniques, incorporating in the craftsmanship to make watches like making crafts with Japanese’s features.The front glass is made of sapphire glass, which is of the same level as many world leading brands. The sapphire glass we adopt is produced and polished in Japan, possessing the features of excellent transparency and great durability."
+					],
+					"right": [
+						"High quality Swiss made watch hands are adopted.The watch hands of automatic winding mechanical watches (MA060102) are made of steel, smelting into blue steel. The processing is time consuming and effort taking.Chronograph wrist watches (MA060103), Three-handed watches（MA060105）, Moon phase mechanical watches（MA060104） The hands of the following watches are cut by diamond to present the beautiful luster. 　",
+						"We strive for perfection for making the crowns of the watches even if they are something unnoticeable. The pattern of the monoceros on the crown is presented in relief to show sense of luxury.Metal straps we use for the watches are made of stainless steel in a basic style. They are waterproof, antioxidant, sturdy, durable and not easy to fade. It’s comfortable to wear and it also displays understated luxury.",
+						"Among the various metal straps, the items of three band pieces or five band pieces in a basic style are the easiest to wear. We adopt stainless steel fold over buckles and three band straps to make the overall look simple and stylish."
+					]
+				}
+			}
+		},
+		"shopping": {
+			"breadcrumb": "Top > Online Shopping",
+			"message": "If you are interested in purchasing, please contact us",
+			"titleImg": "stit-shopping_en.png"
+		},
+		"contactUs": {
+			"breadcrumb": "Top > Contact us",
+			"titleImg": "stit-mail_en.png",
+			"form": {
+				"fName": {
+					"header": "First Name",
+					"body": "Mary"
+				},
+				"lName": {
+					"header": "Last Name",
+					"body": "Wang"
+				},
+				"email": {
+					"header": "E-mail",
+					"body": "marywang@kousei-watch.co.jp"
+				},
+				"message": {
+					"header": "Message",
+					"body": ""
+				}
+			},
+			"btnSend": "Send",
+			"btnReset": "Reset"
+		},
+		"privacy" : {
+			"titleImg": "stit-privacy_en.png",
+			"breadcrumb": "Top > Privacy policy",
+			"privacy_intro_vocab": "Kosei Manufacturing Co., Ltd. (hereinafter referred to as 'the company') when the customer conducts transactions with the company, the customer must provide relevant contact information, including name, address, telephone number, e-mail address and other necessary information related to the transaction (hereinafter referred to as 'Personal data or personal information').The company promises to use the customer's personal information in accordance with the privacy policy of the 'Personal Data Protection Act'.",
+			"section_1_header_title": "1.Purpose of using personal data",
+			"section_1_header_description": "The company uses customers’ personal information for the following purposes",
+			"section_1_body": [
+				"When shipping products and collecting fees, we need to use contact information such as customer name, address and phone number. In addition, we may use the customer's credit card number and bank account information during checkout.",
+				"In order to confirm the order content and delivery method, we will use the customer's name, address, email address and other contact information.",
+				"In order to inform customers of our activities, products and services, we will use customers' purchase records and contact information (including name, address and email address). If you do not need these notices, we will cancel the notice according to your request.",
+				"In order to improve the service, we will use comments received from customers, survey results, and contact records.",
+				"We will use your name, address and email address and other contact information to respond to your requests and inquiries."
+			],
+			"section_2_header_title": "2.Personal Asset Management",
+			"section_2_header_description": "The company manages personal information in accordance with the following specifications. ",
+			"section_2_body": [
+				"In accordance with the 'Personal Data Protection Law', we will establish the necessary internal systems and use personal data properly.",
+				"Personal data is only used on business, strictly storaged and managed, and we take preventive measures to protect data.",
+				"On the premise of not obstructing the service, the personal data received will be deleted after a period of time."
+			],
+			"section_3_header_title": "3.Personal information disclosure ",
+			"section_3_part_1_intro": "Except for the following circumstances, without the consent of the guest, personal information shall not be disclosed.",
+			"section_3_part_2_intro": "When the customer asks to remind the offered information, it can only be provided after confirming that it is the person.",
+			"section_3_part_1_body": [
+				"When the court or the police require disclosure according to the law",
+				"When there are special provisions in the law ",
+				"When there is a risk of damaging others’ life, and property, it can be disclosed without the customer’s consent ",
+				"When there is a violation of the law, violation of the company’s rules of use, or violation of precautions, in order to protect the company’s rights, property or services, the company can disclose it without the customer’s consent "
+			],
+			"section_3_part_2_description": "Note: How to confirm yourself. <br>",
+			"section_3_part_3_description": "Please mail a copy of your identification (driver's license, insurance card) to our company.<br>",
+			"section_3_part_4_description": "The information can be presented when the person is clearly identified. ",
+			"special_1_description": "※If you want to change or delete personal information, please contact the person in charge below",
+			"special_2_description": "Kosei Manufacturing Co., Ltd. Person in charge: Ishikawa",
+			"special_3_description": "4077-3, Yaho, Kunitachi-shi, Tokyo　tel 0425-75-2732　fax 0425-77-0652"
+		},
+		"law": {
+			"breadcrumb": "Top > Specific Commercial Law Representative",
+			"titleImg": "stit-law_en.png",
+			"company": {
+				"title": "Company",
+				"content": "KOUSEI INC."
+			},
+			"personInCharge": {
+				"title": "Person in charge",
+				"content": "YOSHIO ISHIKAWA"
+			},
+			"location": {
+				"title": "Location",
+				"content": "4077-3, YAHO, KUNITACHI-SHI, TOKYO, JAPAN"
+			},
+			"teleNo": {
+				"title": "Telephone No.",
+				"content": "042-575-2732"
+			},
+			"orderWay": {
+				"title": "Ways to place orders ",
+				"content": "By e-mail、FAX、TEL"
+			},
+			"fee": {
+				"title": "Other fees except the products",
+				"content": "10% of consumption tax and shipping fee will be charged (the shipping fee varies according to the receiving address, and the shipping fee will be reported separately)"
+			},
+			"howToPay": {
+				"title": "How to pay",
+				"content": "*Shopping domestically in Japan: The product will be delivered by Yamato Transport and the payment should be made on delivery.Processing fee of cash on delivery service will be charged. Please refer to Yamato Transport for more details. *Shopping from other countries: 海外訂購的相關請大姊思考？？？？"
+			},
+			"delivery": {
+				"title": "About the delivery",
+				"content": "Goods in stock will be delivered within 5 working days after the order is confirmed.   For ordered products and out-of-stock products, we will reply to the delivery date separately."
+			},
+			"returnPolicy": {
+				"title": "Product return policy",
+				"content": "If the product is found to be defective, damaged, or not ordered at the time of arrival, it can be returned. The payment will be refunded to the customer's designated account. If the product is not defective, our company will not accept returns."
+			}
+		}
+	}
+}

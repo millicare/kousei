@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<title>晃成製作所有限会社 | 会社案内（会社概要）</title>
+		<meta name="author" content="晃成製作所有限会社,KOUSEI INC.," />
+		<meta name="description" content="晃成製作所有限会社は高性能NC工作機器を完備した自社工房において腕時計の企画、製造からメンテナンスまでを一貫して行う国内唯一のウォッチメ－カ－です。お客さまのニーズに合わせ小ロットにての時計製造を請け負います。" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" media="all" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="../css/basic.css" />
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+		<![endif]-->
+		<meta name="keywords" content="腕時計,時計,国産時計,小ロット,OEM,高性能NC工作機器,自社工房" />
+		<script type="text/javascript" src="../js/jquery-3.2.0.min.js"></script>
+		<script src="../js/jquery.jtruncsubstr.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(function() {
+				var language
+				function setLanguage (lang) {
+					localStorage.setItem('language', lang)
+				}
+				function getLanguage () {
+					(localStorage.getItem('language') == null) ? setLanguage('jp') : false
+					var dfr = $.Deferred()
+					$.ajax({
+						url:  '../lang/' +  localStorage.getItem('language') + '.json',
+						dataType: 'json',
+						type: 'GET',
+						success: function (lang) {
+							dfr.resolve(lang)
+						}
+					});
+					return dfr.promise()
+				}
+				function refreshPage () {
+
+					for (var hId in language.layout.header) {
+						$('#gheader-in #gnav li#' + hId + ' a img').attr('src', '../img/navi/' + language.layout.header[hId].normalImg)
+						$('#gheader-in #gnav li#' + hId + ' a').css('background', 'url(../img/navi/' + language.layout.header[hId].hoverImg + ') 0 0 no-repeat')
+						$('#gheader-in #gnav li#' + hId + ' a').hover(function () {
+							$(this).css('background-color', '#000')
+						}, function () {
+							$(this).css('background-color', '#fff')
+						})
+					}
+
+					$('#stit #sub-nav02 ul li').eq(0).html('<a href="index.html">' + language.pages.aboutUs.tabs[0].text + '</a>')
+					$('#stit #sub-nav02 ul li').eq(1).html(language.pages.aboutUs.tabs[1].text)
+
+					$('#stit #stit-left02 img').attr('src', '../img/aboutus/' + language.pages.aboutUs.tabs[1].img)
+
+					for (var prop in language.pages.aboutUs.introduce) {
+						var header = language.pages.aboutUs.introduce[prop].header
+						var body = language.pages.aboutUs.introduce[prop].body
+
+						$('.contents .table-about tr#' + prop).find('th').eq(0).html(header)
+						$('.contents .table-about tr#' + prop).find('td').eq(0).html(body)
+					}
+
+					$('.breadcrumb .breadcrumb-in').html('<a href="../index.html">' + language.pages.aboutUs.breadcrumb.introduce.split('>')[0] + '</a>>' + language.pages.aboutUs.breadcrumb.introduce.split('>')[1])
+					for (var fId in language.layout.footer) {
+						$('#gfooter #navi-ft li#' + fId + ' a').html(language.layout.footer[fId])
+					}
+				}
+				$('#lang-sel select').change(function () {
+					setLanguage($(this).val())
+					$.when(getLanguage()).then(function (lang) {
+						language = lang
+						refreshPage()
+					})
+				})
+				var lang = localStorage.getItem('language')
+				$('#lang-sel select').val((lang ? lang : 'jp')).trigger('change')
+			});
+		</script>
+		<script type="text/javascript">
+		$(function(){
+		$("#toggle").click(function(){
+			$("#gnav").slideToggle();
+			return false;
+		  });
+		$(window).resize(function(){
+			var win = $(window).width();
+			var p = 959;
+			if(win > p){
+			$("#gnav").show();
+		 } else {
+			$("#gnav").hide();
+		 }
+		 });
+		});
+		$(function() {
+			var win = $(window).width();
+			var p = 959;
+			if(win < p)$(function(){
+				$("#gnav li a").click(function(){
+					$("#gnav").hide();
+				});
+			});
+		});
+		</script>
+	</head>
+	<body>
+		<header id="gheader00">
+			<div id="sub-logo">
+				<img src="../img/navi/sub-logo.png" alt="晃成製作所有限会社 KOUSEI INC., The independent watch maker.">
+			</div>
+		</header>
+		<header id="gheader02">
+			<nav id="gheader-in">
+				<div id="toggle"><a href="#"></a></div>
+				<ul id="gnav">
+					<li id="home">
+						<a id="navi-01" href="../index.html">
+							<img src="../img/navi/nav-bt-top01.png" alt="トップページ | TO TOP">
+						</a>
+					</li>
+					<li id="aboutUs">
+						<a id="navi-02" href="../aboutus/index.html">
+							<img src="../img/navi/nav-bt-about01.png" alt="会社案内 | ABOUT US">
+						</a>
+					</li>
+					<li id="oem">
+						<a id="navi-03" href="../oem/index.html">
+							<img src="../img/navi/nav-bt-oem01.png" alt="受託製造 | OEM">
+						</a>
+					</li>
+					<li id="productList">
+						<a id="navi-04" href="../monoceros/index.html">
+							<img src="../img/navi/nav-bt-mono01.png" alt="monoceros | ORIGINAL PRODUCT">
+						</a>
+					</li>
+					<li id="shopping">
+						<a id="navi-05" href="../shopping/index.html">
+							<img src="../img/navi/nav-bt-shop01.png" alt="通信販売 | ONLINE SHOPPING">
+						</a>
+					</li>
+					<li id="contactUs">
+						<a id="navi-06" href="../contactus/index.html">
+							<img src="../img/navi/nav-bt-mail01.png" alt="お問い合わせ | OCONTACT US">
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div id="lang-sel">
+				<select>
+					<option value="jp">日本語</option>
+					<option value="en">English</option>
+					<option value="ch">中文</option>
+				</select>
+			</div>
+		</header>
+		<div class="breadcrumb">
+			<div class="breadcrumb-in">
+				<a href="../index.html">トップ</a> > 会社案内（会社概要）
+			</div>
+		</div>
+		<div id="wrapper">
+			<div id="stit">
+				<div id="stit-left02">
+					<img src="../img/aboutus/stit-gaiyo.png" alt="会社概要">
+				</div>
+				<nav id="sub-nav02">
+					<ul>
+						<li>
+							<a href="index.html">
+								企業理念
+							</a>
+						</li>
+						<li class="stay">
+							会社概要
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="contents">
+				<div class="table-about">
+					<table>
+						<tr id="name">
+							<th>
+								会社名
+							</th>
+							<td>
+								晃成製作所有限会社
+							</td>
+						</tr>
+						<tr id="address">
+							<th>
+								所在地
+							</th>
+							<td>
+								〒 186-0011 東京都国立市谷保4077－3
+							</td>
+						</tr>
+						<tr id="phoneNum">
+							<th>
+								電話番号
+							</th>
+							<td>
+								042-575-2732
+							</td>
+						</tr>
+						<tr id="faxNum">
+							<th>
+								FAX番号
+							</th>
+							<td>
+								042-577-0652
+							</td>
+						</tr>
+						<tr>
+							<th>
+								E-MAIL
+							</th>
+							<td>
+								<script type="text/javascript">
+								<!--
+								function converter(M){
+								var str="", str_as="";
+								for(var i=0;i<M.length;i++){
+								str_as = M.charCodeAt(i);
+								str += String.fromCharCode(str_as + 1);
+								}
+								return str;
+								}
+								var ad = converter(String.fromCharCode(104,109,101,110,63,106,110,116,114,100)+String.fromCharCode(104,44,118,96,115,98,103,45,98,110,45,105,111));
+								document.write("<a href=\"mai"+"lto:"+ad+"\">"+ad+"<\/a>");
+								//-->
+								</script>
+								<noscript>（画像などを設置）</noscript>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								URL
+							</th>
+							<td>
+								<a href="http://www.kousei-watch.co.jp/">
+									http://www.kousei-watch.co.jp/
+								</a>
+							</td>
+						</tr>
+						<tr id="ceo">
+							<th>
+								代表取締役
+							</th>
+							<td>
+								石川 佳男
+							</td>
+						</tr>
+						<tr id="foundAt">
+							<th>
+								創立年月日
+							</th>
+							<td>
+								昭和53年6月
+							</td>
+						</tr>
+						<tr id="capital">
+							<th>
+								資本金
+							</th>
+							<td>
+								3,000千円
+							</td>
+						</tr>
+						<tr id="numOfEmp">
+							<th>
+								従業員数
+							</th>
+							<td>
+								10名
+							</td>
+						</tr>
+						<tr id="content">
+							<th>
+								事業内容
+							</th>
+							<td>
+								自社オリジナルウォッチ製造、販売。腕時計OEM受注、製造<br>
+								【自社ブランド】<br>
+								MONOCEROS、KOUSEI, CREMATIS、CLORIS
+							</td>
+						</tr>
+						<tr id="char">
+							<th class="last-th">
+								会社特性
+							</th>
+							<td class="last-td">
+								高性能NC工作機器を完備した自社工房において腕時計の企画、製造からメンテナンスまでを一貫して行う国内唯一のウォッチメ－カ－です。<br>
+								お客さまのニーズに合わせ小ロットにての時計製造を請け負います。
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div><!--wrapper完了-->
+		<footer id="gfooter">
+			<div id="gfooter-in">
+				<div id="ft-logo">
+					<div>
+						<img src="../img/common/ft-logo.png" alt="晃成製作所有限会社 KOUSEI INC., The independent watch maker.">
+					</div>
+					<div class="sns-icons">
+						<a href="https://www.facebook.com/%E6%99%83%E6%88%90%E8%A3%BD%E4%BD%9C%E6%89%80%E6%9C%89%E9%99%90%E4%BC%9A%E7%A4%BE-110668920598755/" target="_blank"><img src="../img/common/icon_fb.png" alt="facebook"></a>
+						<a href="https://www.instagram.com/kousei_watch_monoceros/" target="_blank"><img src="../img/common/icon_insta.png" alt="insta"></a>
+						<a href=""><img src="../img/common/icon_twitter.png" alt="twitter"></a>
+					</div>
+				</div>
+				<div id="navi-ft">
+					<div class="table-el">
+						<ul>
+							<li id="home">
+								<a href="../index.html">トップページ</a>
+							</li>
+							<li id="aboutUs">
+								<a href="../aboutus/index.html">会社案内</a>
+							</li>
+							<li id="oem">
+								<a href="../oem/index.html">受託製造（OEM）</a>
+							</li>
+						</ul>
+					</div>
+					<div class="table-el">
+						<ul>
+							<li>
+								monoceros
+							</li>
+							<li id="productList">
+								<a href="../monoceros/index.html">&gt;商品リスト</a>
+							</li>
+							<li id="feature">
+								<a href="../monoceros/feature.html">&gt;特徴</a>
+							</li>
+							<li id="design">
+								<a href="../monoceros/design.html">&gt;デザイン</a>
+							</li>
+						</ul>
+					</div>
+					<div class="table-el">
+						<ul>
+							<li id="shopping">
+								<a href="../shopping/index.html">通信販売</a>
+							</li>
+							<li id="contactUs">
+								<a href="../contactus/index.html">お問い合わせ</a>
+							</li>
+							<li id="law">
+								<a href="../shopping/law.html">特定商取引法に基づく表示</a>
+							</li>
+							<li id="privacy">
+								<a href="../privacy.html">プライバシーポリシー</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="cp-ft">
+				© 2019 KOUSEI INC.,
+			</div>
+		</footer>
+	</body>
+</html>

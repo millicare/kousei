@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<title>晃成製作所有限会社 | monoceros MA109001</title>
+		<meta name="author" content="晃成製作所有限会社,KOUSEI INC.," />
+		<meta name="description" content="晃成製作所有限会社は高性能NC工作機器を完備した自社工房において腕時計の企画、製造からメンテナンスまでを一貫して行う国内唯一のウォッチメ－カ－です。お客さまのニーズに合わせ小ロットにての時計製造を請け負います。" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" media="all" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="../css/basic.css" />
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+		<![endif]-->
+		<meta name="keywords" content="腕時計,時計,国産時計,小ロット,OEM,高性能NC工作機器,自社工房" />
+		<script type="text/javascript" src="../js/jquery-3.2.0.min.js"></script>
+		<script src="../js/jquery.jtruncsubstr.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(function() {
+				var language
+				function setLanguage (lang) {
+					localStorage.setItem('language', lang)
+				}
+				function getLanguage () {
+					(localStorage.getItem('language') == null) ? setLanguage('jp') : false
+					var dfr = $.Deferred()
+					$.ajax({
+						url:  '../lang/' +  localStorage.getItem('language') + '.json',
+						dataType: 'json',
+						type: 'GET',
+						success: function (lang) {
+							dfr.resolve(lang)
+						}
+					});
+					return dfr.promise()
+				}
+				function refreshPage () {
+					for (var hId in language.layout.header) {
+						$('#gheader-in #gnav li#' + hId + ' a img').attr('src', '../img/navi/' + language.layout.header[hId].normalImg)
+						$('#gheader-in #gnav li#' + hId + ' a').css('background', 'url(../img/navi/' + language.layout.header[hId].hoverImg + ') 0 0 no-repeat')
+						$('#gheader-in #gnav li#' + hId + ' a').hover(function () {
+							$(this).css('background-color', '#000')
+						}, function () {
+							$(this).css('background-color', '#fff')
+						})
+					}
+					$('#stit #sub-nav ul li').eq(0).html('<a href="index.html">' + language.pages.monoceros.productList.tabName + '</a>')
+					$('#stit #sub-nav ul li').eq(1).html('<a href="feature.html">' + language.pages.monoceros.feature.tabName + '</a>')
+					$('#stit #sub-nav ul li').eq(2).html('<a href="design.html">' + language.pages.monoceros.design.tabName + '</a>')
+					function own(item) {
+						return item.model == this
+					}
+					var product = language.pages.monoceros.productList.data.find(own, 'MA109001')
+					var type = product.type
+					var name = product.name
+					var model = product.model
+					var price = product.price
+					$('.product-name').html(type + ' ' + name + '<br>' + model + ' ' + '¥' + price + ' + TAX')
+					$('.description').empty()
+					for (var i in product.comment.header) {
+						var element = document.createElement('p')
+						element.setAttribute('class', 'padb12em')
+						element.innerHTML = product.comment.header[i]
+						$('.description').append(element)
+					}
+					var ul = document.createElement('ul')
+					for (var i in product.comment.body) {
+						var element = document.createElement('li')
+						element.innerHTML = product.comment.body[i]
+						ul.appendChild(element)
+					}
+					$('.description').append(ul)
+
+					for (var i in product.comment.footer) {
+						var element = document.createElement('p')
+						element.setAttribute('class', 'padb12em')
+						element.innerHTML = product.comment.footer[i]
+						$('.description').append(element)
+					}
+					for (var prop in product.property) {
+						$('.spec table tr#' + prop + ' th').html(product.property[prop].title)
+						$('.spec table tr#' + prop + ' td').html(
+							product.property[prop].content)
+					}
+					$('.to-shop a').html(language.pages.monoceros.productList.orderTxt)
+					$('.breadcrumb .breadcrumb-in').html('<a href="../index.html">' + language.pages.monoceros.breadcrumb.productList.split('>')[0] + '</a>>' + language.pages.monoceros.breadcrumb.productList.split('>')[1])
+					for (var fId in language.layout.footer) {
+						$('#gfooter #navi-ft li#' + fId + ' a').html(language.layout.footer[fId])
+					}
+				}
+				$('#lang-sel select').change(function () {
+					setLanguage($(this).val())
+					$.when(getLanguage()).then(function (lang) {
+						language = lang
+						refreshPage()
+					})
+				})
+				var lang = localStorage.getItem('language')
+				$('#lang-sel select').val((lang ? lang : 'jp')).trigger('change')
+			});
+		</script>
+		<script type="text/javascript">
+		$(function(){
+		$("#toggle").click(function(){
+			$("#gnav").slideToggle();
+			return false;
+		  });
+		$(window).resize(function(){
+			var win = $(window).width();
+			var p = 959;
+			if(win > p){
+			$("#gnav").show();
+		 } else {
+			$("#gnav").hide();
+		 }
+		 });
+		});
+		$(function() {
+			var win = $(window).width();
+			var p = 959;
+			if(win < p)$(function(){
+				$("#gnav li a").click(function(){
+					$("#gnav").hide();
+				});
+			});
+		});
+		</script>
+	</head>
+	<body>
+		<header id="gheader00">
+			<div id="sub-logo">
+				<img src="../img/navi/sub-logo.png" alt="晃成製作所有限会社 KOUSEI INC., The independent watch maker.">
+			</div>
+		</header>
+		<header id="gheader03">
+			<nav id="gheader-in">
+				<div id="toggle"><a href="#"></a></div>
+				<ul id="gnav">
+					<li id="home">
+						<a id="navi-01" href="../index.html">
+							<img src="../img/navi/nav-bt-top01.png" alt="トップページ | TO TOP">
+						</a>
+					</li>
+					<li id="aboutUs">
+						<a id="navi-02" href="../aboutus/index.html">
+							<img src="../img/navi/nav-bt-about01.png" alt="会社案内 | ABOUT US">
+						</a>
+					</li>
+					<li id="oem">
+						<a id="navi-03" href="../oem/index.html">
+							<img src="../img/navi/nav-bt-oem01.png" alt="受託製造 | OEM">
+						</a>
+					</li>
+					<li id="productList">
+						<a id="navi-04" href="../monoceros/index.html">
+							<img src="../img/navi/nav-bt-mono01.png" alt="monoceros | ORIGINAL PRODUCT">
+						</a>
+					</li>
+					<li id="shopping">
+						<a id="navi-05" href="../shopping/index.html">
+							<img src="../img/navi/nav-bt-shop01.png" alt="通信販売 | ONLINE SHOPPING">
+						</a>
+					</li>
+					<li id="contactUs">
+						<a id="navi-06" href="../contactus/index.html">
+							<img src="../img/navi/nav-bt-mail01.png" alt="お問い合わせ | OCONTACT US">
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div id="lang-sel">
+				<select>
+					<option value="jp">日本語</option>
+					<option value="en">English</option>
+					<option value="ch">中文</option>
+				</select>
+			</div>
+		</header>
+		<div class="breadcrumb">
+			<div class="breadcrumb-in">
+				<a href="../index.html">トップ</a> > monoceros
+			</div>
+		</div>
+		<div id="wrapper">
+			<div id="stit">
+				<div id="stit-left">
+					<figure id="stit-fg">
+						<img src="../img/monoceros/stit-monoceros.png" alt="monoceros">
+					</figure>
+				</div>
+				<nav id="sub-nav">
+					<ul>
+						<li>
+							<a href="index.html">
+								商品リスト
+							</a>
+						</li>
+						<li>
+							<a href="feature.html">
+								特徴
+							</a>
+						</li>
+						<li>
+							<a href="design.html">
+								デザイン
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="contents">
+				<div class="contents-left04">
+					<div class="photo-pro">
+						<img src="../img/monoceros/ma109001.jpg" alt="MA109001">
+					</div>
+				</div>
+				<div class="contents-right04">
+					<div class="product-name">
+						CHRONOGRAPH　モノセロス　クロノグラフ<br>
+						MA109001　¥150,000 + TAX　<span class="red">生産終了</span>
+					</div>
+					<div class="description">
+						<p class="padb12em">
+							機械式時計の中でもその構造の複雑さ、繊細さで常に人々を魅了するストップウォッチ機能付きモデルがこのクロノグラフである。秒、分、時間をそれぞれ計測する針が文字盤に所狭しと配され、ひとたびスタ－トボタンがプッシュされれば幾重もの歯車達が正確に刻々と時間を計測していく。その機能美を際だたせるために不必要なデザインは極限までそぎ落とされ、まさに至高の逸品に仕上がった。<br>
+							ムーブメントにバルジュー7750（自動巻）を採用したクロノグラフ（60秒、30分、2時間積算計付き）。デイデイト表示。<br>
+							シルバーの文字盤には立体インデックスを配し、シンプルな印象に仕上げました。
+						</p>
+							<ul>
+								<li>
+									機能の美しさ以外この時計を装飾するすべはない
+								</li>
+								<li>
+									裏面シースルーバック。機械の躍動が堪能できる
+								</li>
+								<li>
+									繊細なム－ブメントが収まる重厚なケ－ス
+								</li>
+								<li>
+									脱着が容易なワンタッチバックル。革にも優しい
+								</li>
+							</ul>
+						<p class="padb12em">
+							ケースの特徴：裏ステンレス材の良さを出し、面、ハイライトを強調したデザインになっています。<br>
+							文字板：シンプルさを意識したシルバー仕上げ
+							針：ブルースチールで鉄材を一本ずつ火で焼き、青色に変化させた手間の掛かった針を使用しています。
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="spec">
+				<table>
+					<tr id="movement">
+						<th>
+							ムーブメント
+						</th>
+						<td>
+							バルジュー7750　スイス製25石自動巻ム－ブメント（手巻機能付き）
+						</td>
+					</tr>
+					<tr id="function">
+						<th>
+							機能
+						</th>
+						<td>
+							時針、分針、秒針（9時位置）、クロノ針（60秒積算計）、30分積算計（12時位置）、12時間積算計（6時位置）、デイデイト
+						</td>
+					</tr>
+					<tr id="material">
+						<th>
+							材質
+						</th>
+						<td>
+							ケ－ス：SS（ステンレススチール）、表裏ガラス：サファイア
+						</td>
+					</tr>
+					<tr id="band">
+						<th>
+							ストラップ
+						</th>
+						<td>
+							最高級本革マッドクロコ、ワンタッチバックル（三つ折れ式）仕様
+						</td>
+					</tr>
+					<tr id="size">
+						<th>
+							サイズ
+						</th>
+						<td>
+							直径：約38mm、厚み：約14.5mm
+						</td>
+					</tr>
+					<tr id="dialColor">
+						<th>
+							文字盤色
+						</th>
+						<td>
+							シルバー
+						</td>
+					</tr>
+					<tr id="needleColor">
+						<th>
+							針色
+						</th>
+						<td>
+							ブルースチール
+						</td>
+					</tr>
+					<tr id="waterproof">
+						<th>
+							防水
+						</th>
+						<td>
+							5気圧防水
+						</td>
+					</tr>
+					<tr id="menAndLady">
+						<th>
+							メンズ、レディース
+						</th>
+						<td>
+							生産終了　メンズ
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="pages">
+				<nav class="pages-nav-msh">
+					<ul>
+						<li>
+							<a href="ma060105gr.html">
+								<img src="../img/monoceros/to-top.png" alt="最初のページへ">
+							</a>
+						</li>
+						<li>
+							<a href="ma060103.html">
+								<img src="../img/monoceros/to-pre.png" alt="前のページへ">
+							</a>
+						</li>
+						<li>
+							<a href="ma410001yg.html">
+								<img src="../img/monoceros/to-next.png" alt="次のページへ">
+							</a>
+						</li>
+						<li>
+							<a href="ma906003.html">
+								<img src="../img/monoceros/to-end.png" alt="最後のページへ">
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div><!--wrapper完了-->
+		<footer id="gfooter">
+			<div id="gfooter-in">
+				<div id="ft-logo">
+					<div>
+						<img src="../img/common/ft-logo.png" alt="晃成製作所有限会社 KOUSEI INC., The independent watch maker.">
+					</div>
+					<div class="sns-icons">
+						<a href="https://www.facebook.com/%E6%99%83%E6%88%90%E8%A3%BD%E4%BD%9C%E6%89%80%E6%9C%89%E9%99%90%E4%BC%9A%E7%A4%BE-110668920598755/" target="_blank"><img src="../img/common/icon_fb.png" alt="facebook"></a>
+						<a href="https://www.instagram.com/kousei_watch_monoceros/" target="_blank"><img src="../img/common/icon_insta.png" alt="insta"></a>
+						<a href=""><img src="../img/common/icon_twitter.png" alt="twitter"></a>
+					</div>
+				</div>
+				<div id="navi-ft">
+					<div class="table-el">
+						<ul>
+							<li id="home">
+								<a href="../index.html">トップページ</a>
+							</li>
+							<li id="aboutUs">
+								<a href="../aboutus/index.html">会社案内</a>
+							</li>
+							<li id="oem">
+								<a href="../oem/index.html">受託製造（OEM）</a>
+							</li>
+						</ul>
+					</div>
+					<div class="table-el">
+						<ul>
+							<li>
+								monoceros
+							</li>
+							<li id="productList">
+								<a href="../monoceros/index.html">&gt;商品リスト</a>
+							</li>
+							<li id="feature">
+								<a href="../monoceros/feature.html">&gt;特徴</a>
+							</li>
+							<li id="design">
+								<a href="../monoceros/design.html">&gt;デザイン</a>
+							</li>
+						</ul>
+					</div>
+					<div class="table-el">
+						<ul>
+							<li id="shopping">
+								<a href="../shopping/index.html">通信販売</a>
+							</li>
+							<li id="contactUs">
+								<a href="../contactus/index.html">お問い合わせ</a>
+							</li>
+							<li id="law">
+								<a href="../shopping/law.html">特定商取引法に基づく表示</a>
+							</li>
+							<li id="privacy">
+								<a href="../privacy.html">プライバシーポリシー</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="cp-ft">
+				© 2019 KOUSEI INC.,
+			</div>
+		</footer>
+	</body>
+</html>

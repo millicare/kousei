@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<title>晃成製作所有限会社 | monoceros 特徴</title>
+		<meta name="author" content="晃成製作所有限会社,KOUSEI INC.," />
+		<meta name="description" content="晃成製作所有限会社は高性能NC工作機器を完備した自社工房において腕時計の企画、製造からメンテナンスまでを一貫して行う国内唯一のウォッチメ－カ－です。お客さまのニーズに合わせ小ロットにての時計製造を請け負います。" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" media="all" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="../css/basic.css" />
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+		<![endif]-->
+		<meta name="keywords" content="腕時計,時計,国産時計,小ロット,OEM,高性能NC工作機器,自社工房" />
+		<script type="text/javascript" src="../js/jquery-3.2.0.min.js"></script>
+		<script src="../js/jquery.jtruncsubstr.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(function() {
+				var language
+				function setLanguage (lang) {
+					localStorage.setItem('language', lang)
+				}
+				function getLanguage () {
+					(localStorage.getItem('language') == null) ? setLanguage('jp') : false
+					var dfr = $.Deferred()
+					$.ajax({
+						url:  '../lang/' +  localStorage.getItem('language') + '.json',
+						dataType: 'json',
+						type: 'GET',
+						success: function (lang) {
+							dfr.resolve(lang)
+						}
+					});
+					return dfr.promise()
+				}
+				function refreshPage () {
+					for (var hId in language.layout.header) {
+						$('#gheader-in #gnav li#' + hId + ' a img').attr('src', '../img/navi/' + language.layout.header[hId].normalImg)
+						$('#gheader-in #gnav li#' + hId + ' a').css('background', 'url(../img/navi/' + language.layout.header[hId].hoverImg + ') 0 0 no-repeat')
+						$('#gheader-in #gnav li#' + hId + ' a').hover(function () {
+							$(this).css('background-color', '#000')
+						}, function () {
+							$(this).css('background-color', '#fff')
+						})
+					}
+					$('#stit #sub-nav ul li').eq(0).html('<a href="index.html">' + language.pages.monoceros.productList.tabName + '</a>')
+					$('#stit #sub-nav ul li').eq(1).html(language.pages.monoceros.feature.tabName)
+					$('#stit #sub-nav ul li').eq(2).html('<a href="design.html">' + language.pages.monoceros.design.tabName + '</a>')
+					for (var i = 0; i < 4; i++) {
+						$('.contents-left03 p').eq(i).html(language.pages.monoceros.feature.data[i])
+					}
+					$('.breadcrumb .breadcrumb-in').html('<a href="../index.html">' + language.pages.monoceros.breadcrumb.feature.split('>')[0] + '</a>> <a href="index.html">' + language.pages.monoceros.breadcrumb.feature.split('>')[1] + '</a>>' + language.pages.monoceros.breadcrumb.feature.split('>')[2])
+					for (var fId in language.layout.footer) {
+						$('#gfooter #navi-ft li#' + fId + ' a').html(language.layout.footer[fId])
+					}
+				}
+				$('#lang-sel select').change(function () {
+					setLanguage($(this).val())
+					$.when(getLanguage()).then(function (lang) {
+						language = lang
+						refreshPage()
+					})
+				})
+				var lang = localStorage.getItem('language')
+				$('#lang-sel select').val((lang ? lang : 'jp')).trigger('change')
+			});
+		</script>
+		<script type="text/javascript">
+		$(function(){
+		$("#toggle").click(function(){
+			$("#gnav").slideToggle();
+			return false;
+		  });
+		$(window).resize(function(){
+			var win = $(window).width();
+			var p = 959;
+			if(win > p){
+			$("#gnav").show();
+		 } else {
+			$("#gnav").hide();
+		 }
+		 });
+		});
+		$(function() {
+			var win = $(window).width();
+			var p = 959;
+			if(win < p)$(function(){
+				$("#gnav li a").click(function(){
+					$("#gnav").hide();
+				});
+			});
+		});
+		</script>
+	</head>
+	<body>
+		<header id="gheader00">
+			<div id="sub-logo">
+				<img src="../img/navi/sub-logo.png" alt="晃成製作所有限会社 KOUSEI INC., The independent watch maker.">
+			</div>
+		</header>
+		<header id="gheader03">
+			<nav id="gheader-in">
+				<div id="toggle"><a href="#"></a></div>
+				<ul id="gnav">
+					<li id="home">
+						<a id="navi-01" href="../index.html">
+							<img src="../img/navi/nav-bt-top01.png" alt="トップページ | TO TOP">
+						</a>
+					</li>
+					<li id="aboutUs">
+						<a id="navi-02" href="../aboutus/index.html">
+							<img src="../img/navi/nav-bt-about01.png" alt="会社案内 | ABOUT US">
+						</a>
+					</li>
+					<li id="oem">
+						<a id="navi-03" href="../oem/index.html">
+							<img src="../img/navi/nav-bt-oem01.png" alt="受託製造 | OEM">
+						</a>
+					</li>
+					<li id="productList">
+						<a id="navi-04" href="../monoceros/index.html">
+							<img src="../img/navi/nav-bt-mono01.png" alt="monoceros | ORIGINAL PRODUCT">
+						</a>
+					</li>
+					<li id="shopping">
+						<a id="navi-05" href="../shopping/index.html">
+							<img src="../img/navi/nav-bt-shop01.png" alt="通信販売 | ONLINE SHOPPING">
+						</a>
+					</li>
+					<li id="contactUs">
+						<a id="navi-06" href="../contactus/index.html">
+							<img src="../img/navi/nav-bt-mail01.png" alt="お問い合わせ | OCONTACT US">
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div id="lang-sel">
+				<select>
+					<option value="jp">日本語</option>
+					<option value="en">English</option>
+					<option value="ch">中文</option>
+				</select>
+			</div>
+		</header>
+		<div class="breadcrumb">
+			<div class="breadcrumb-in">
+				<a href="../index.html">トップ</a> > <a href="index.html">monoceros</a> > 特徴
+			</div>
+		</div>
+		<div id="wrapper">
+			<div id="stit">
+				<div id="stit-left">
+					<figure id="stit-fg">
+						<img src="../img/monoceros/stit-monoceros.png" alt="monoceros 特徴">
+					</figure>
+				</div>
+				<nav id="sub-nav">
+					<ul>
+						<li>
+							<a href="index.html">
+								商品リスト
+							</a>
+						</li>
+						<li class="stay">
+							特徴
+						</li>
+						<li>
+							<a href="design.html">
+								デザイン
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="contents-mono-feature">
+				<div class="contents-left03">
+					<p>
+						歴史と伝統に裏打ちされたスイス製メカニカルムーブメントと日本ならではの優れた加工技術を融合させた、使うほどに愛着の湧くシンプルスタイルな本格派機械式腕時計です。
+					</p>
+					<p class="padt16em">
+						Monoceros（モノセロス）とは、頭部に長い角を持つ北極海に生息するイッカククジラの学名です。Monoは一本、cerocは牙と言う意味を持っています。堂々とし穏やかで優美な存在感と精悍な角を併せ持つイッカククジラは当社「MONOCEROS　WATCH」が追い求めるイメージそのものです。
+					</p>
+					<p class="padt16em">
+						◯モノセロスの特徴<br>
+						生産の特徴としては、年間生産数は1モデル50本と少量生産での展開になっています。
+						現在、時計を1人7本前後所有している時代にブランド力を付ける為には、少量生産での希少性、大量生産での型にはまった品質と異なり隅々まで目の届いた品質、製造技術をお客様に提供し満足いただける時計創りをしています。
+					</p>
+					<p class="padt16em">
+						ムーブメント（機械）は、スイス製の自動巻き（手巻き機能付き）と、スイスETA社製をベースに特殊機能をほどこすムーブメント製造会社から購入し、当社にて再度、時間の調整（絞り込み）をします。<br>
+						ムーブメントの購入対しては、当社がこれまでスイスムーブメント製造会社との信頼関係を築き上げた結果スイスの一流時計メーカーに搭載されているムーブメントが購入できる事がモノセロス最大の魅力です。<br>
+						尚、現在スイスETA社製のムーブメント（機械式）がETA社の戦略の為、ムーブメントの供給が一流メーカーのみになっている中、前文で述べた様にスイスムーブメント製造会社との信頼関係で、少量ですが供給してもらっています。
+					</p>
+				</div>
+				<div class="contents-right03">
+					<img src="../img/monoceros/img-feat.jpg">
+				</div>
+			</div>
+		</div><!--wrapper完了-->
+		<footer id="gfooter">
+			<div id="gfooter-in">
+				<div id="ft-logo">
+					<div>
+						<img src="../img/common/ft-logo.png" alt="晃成製作所有限会社 KOUSEI INC., The independent watch maker.">
+					</div>
+					<div class="sns-icons">
+						<a href="https://www.facebook.com/%E6%99%83%E6%88%90%E8%A3%BD%E4%BD%9C%E6%89%80%E6%9C%89%E9%99%90%E4%BC%9A%E7%A4%BE-110668920598755/" target="_blank"><img src="../img/common/icon_fb.png" alt="facebook"></a>
+						<a href="https://www.instagram.com/kousei_watch_monoceros/" target="_blank"><img src="../img/common/icon_insta.png" alt="insta"></a>
+						<a href=""><img src="../img/common/icon_twitter.png" alt="twitter"></a>
+					</div>
+				</div>
+				<div id="navi-ft">
+					<div class="table-el">
+						<ul>
+							<li id="home">
+								<a href="../index.html">トップページ</a>
+							</li>
+							<li id="aboutUs">
+								<a href="../aboutus/index.html">会社案内</a>
+							</li>
+							<li id="oem">
+								<a href="../oem/index.html">受託製造（OEM）</a>
+							</li>
+						</ul>
+					</div>
+					<div class="table-el">
+						<ul>
+							<li>
+								monoceros
+							</li>
+							<li id="productList">
+								<a href="../monoceros/index.html">&gt;商品リスト</a>
+							</li>
+							<li id="feature">
+								<a href="../monoceros/feature.html">&gt;特徴</a>
+							</li>
+							<li id="design">
+								<a href="../monoceros/design.html">&gt;デザイン</a>
+							</li>
+						</ul>
+					</div>
+					<div class="table-el">
+						<ul>
+							<li id="shopping">
+								<a href="../shopping/index.html">通信販売</a>
+							</li>
+							<li id="contactUs">
+								<a href="../contactus/index.html">お問い合わせ</a>
+							</li>
+							<li id="law">
+								<a href="../shopping/law.html">特定商取引法に基づく表示</a>
+							</li>
+							<li id="privacy">
+								<a href="../privacy.html">プライバシーポリシー</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="cp-ft">
+				© 2019 KOUSEI INC.,
+			</div>
+		</footer>
+	</body>
+</html>
